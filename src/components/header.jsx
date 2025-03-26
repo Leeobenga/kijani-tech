@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
+import plantsGrowing from "/src/assets/plants-growing - Made with Clipchamp_1740105494706.mp4"
+import leaf2 from "/src/assets/leaf2.jpg"
 
 const Header = () => {
 
@@ -9,11 +11,11 @@ const Header = () => {
             <header>
                 <div className="video-container">
                     <video autoPlay muted loop >
-                        <source src="/src/assets/plants-growing - Made with Clipchamp_1740105494706.mp4" type="video/mp4" />
+                        <source src={plantsGrowing} type="video/mp4" />
                     </video>
                     <nav id="navbar">
                         <span>
-                            <img src="/src/assets/leaf2.jpg" alt="ecologo" width="35" className="ecologo" />
+                            <img src={leaf2} alt="ecologo" width="35" className="ecologo" />
                             Mkulima Green Solutions
                         </span>
                         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
