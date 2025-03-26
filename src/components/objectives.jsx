@@ -1,4 +1,10 @@
 import { useState, useEffect } from "react"
+import greenHouse from "/src/assets/greenhouse-3247181_1920.jpg"
+import renewable from "/src/assets/renewable-1989416.jpg"
+import safetyCareIcon from "/src/assets/icons8-safety-care-48.png"
+import paymentHistoryIcon from "/src/assets/icons8-payment-history-48.png"
+import irrigationSystem from "/src/assets/irrigation-7262563.jpg"
+import assetsIcon from "/src/assets/icons8-safety-care-48.png"
 
 const Objectives = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -7,20 +13,20 @@ const Objectives = () => {
         {
             title: "Food Security",
             desc: "Providing a sustainable and cost-effective water supply, these pumps enable year-round farming.",
-            img: "/src/assets/greenhouse-3247181_1920.jpg",
-            icon: "/src/assets/icons8-safety-care-48.png",
+            img: greenHouse,
+            icon: safetyCareIcon
         },
         {
             title: "Economic Resilience",
             desc: "Reducing reliance on expensive fuel-powered systems, increasing farmers' profits all year round.",
-            img: "/src/assets/renewable-1989416.jpg",
-            icon: "/src/assets/icons8-payment-history-48.png",
+            img: renewable,
+            icon: paymentHistoryIcon
         },
         {
             title: "Environmental Sustainability",
             desc: "Providing efficient water use and reducing carbon emissions by replacing petrol-powered systems.",
-            img: "/src/assets/irrigation-7262563.jpg",
-            icon: "/src/assets/icons8-safety-care-48.png",
+            img: irrigationSystem,
+            icon: assetsIcon
         },
     ];
 
