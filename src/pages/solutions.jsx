@@ -3,6 +3,7 @@ import Footer from "../components/footer"
 import ecologoSolution from "../assets/leaf2.jpg"
 import irrigationSolution from "../assets/irrigation2.jpg"
 import paymentSolution from "../assets/banking.jpg"
+import digitalMarketing from "/src/assets/digital-marketing.jpg"
 
 const Solution = () => {
     return (
@@ -59,7 +60,7 @@ const Solution = () => {
                             <li>Smart irrigation to maximize efficiency</li>
                         </ul>
                     </div>
-                    <img src="/src/assets/digital-marketing.jpg" alt="tech" className="tech-img" />
+                    <img src={digitalMarketing} alt="tech" className="tech-img" />
                 </div>
             </div>
         </div>
