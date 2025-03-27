@@ -1,5 +1,9 @@
 
 import { useState, useEffect } from "react"
+import environmentProtection from "/src/assets/environmental-protection-326923.jpg"
+import comment from "/src/assets/icons8-comment-48.png"
+import bavarian from "/src/assets/bavarian-forest-3385966.jpg"
+import recycle from "/src/assets/recycle-57136.jpg"
 
 const Blog = () => {
 
@@ -9,38 +13,38 @@ const Blog = () => {
     const articles = [
         <article className="blog">
                 <div className="blog-img-container">
-                    <img src="/src/assets/environmental-protection-326923.jpg" alt="enviroment protection" className="blog-img" />
+                    <img src={environmentProtection} alt="enviroment protection" className="blog-img" />
                     <div className="blog-date">03 <br /> Apr</div>
                 </div>                    
                 <h2>Go green and reduce your carbon footprint</h2>
                 <p>Going green and reducing your carbon footprint are important steps towards creating…</p>
                 <div className="read-more">
                     <span className="read-more-text">Read More »</span>
-                    <span><img src="/src/assets/icons8-comment-48.png" alt="comment" className="comment-icon" />Comment <span className="comment-number">0</span></span>
+                    <span><img src={comment} alt="comment" className="comment-icon" />Comment <span className="comment-number">0</span></span>
                 </div>
         </article>,
         <article className="blog">
                 <div className="blog-img-container">
-                    <img src="/src/assets/bavarian-forest-3385966.jpg" alt="forest" className="blog-img" />
+                    <img src={bavarian} alt="forest" className="blog-img" />
                     <div className="blog-date">03 <br /> Apr</div>
                 </div>   
                 <h2>Make a statement support to the eco</h2>
                 <p>Going green and reducing your carbon footprint are important steps towards creating…</p>
                 <div className="read-more">
                     <span className="read-more-text">Read More »</span>
-                    <span><img src="/src/assets/icons8-comment-48.png" alt="comment" className="comment-icon" />Comment <span className="comment-number">0</span></span>
+                    <span><img src={comment} alt="comment" className="comment-icon" />Comment <span className="comment-number">0</span></span>
                 </div>
         </article>,
         <article className="blog">
                 <div className="blog-img-container">
-                    <img src="/src/assets/recycle-57136.jpg" alt="recycle" className="blog-img" />
+                    <img src={recycle} alt="recycle" className="blog-img" />
                     <div className="blog-date">03 <br /> Apr</div>
                 </div>   
                 <h2>Affordable, targeted media for every one</h2>
                 <p>Going green and reducing your carbon footprint are important steps towards creating…</p>
                 <div className="read-more">
                     <span className="read-more-text">Read More »</span>
-                    <span><img src="/src/assets/icons8-comment-48.png" alt="comment" className="comment-icon" />Comment <span className="comment-number">0</span></span>
+                    <span><img src={comment} alt="comment" className="comment-icon" />Comment <span className="comment-number">0</span></span>
                 </div>
         </article>
     ];
