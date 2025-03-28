@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import pepper from "/src/assets/pepper-7200198.jpg"
 import photovoltaic from "/src/assets/photovoltaic-system-2742302_1280.jpg"
 import Tanzania from "/src/assets/tanzania-278361.jpg"
+
 
 
 const Fundraising = () => {
@@ -70,7 +72,7 @@ const Fundraising = () => {
                                 <div className="progress" style={{width:`${riseWidth(index)}%` }}></div>
                             </div>
                             <span className="goal-rise"><span className="goal">GOAL ${obj.goal}</span><span className="rise">RISE ${obj.rise}</span></span>
-                            <button className="cause-button">DONATE NOW</button>
+                            <Link to="/donation"><button className="cause-button">DONATE NOW</button></Link>
                         </article>
                     ))}
                 </section>

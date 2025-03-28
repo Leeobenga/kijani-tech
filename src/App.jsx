@@ -15,6 +15,7 @@ import About from "./pages/about"
 import Solution from "./pages/solutions"
 import Impact from "./pages/impact"
 import Resources from "./pages/resources"
+import Donation from "./pages/donation"
 import "./App.css"
 
 
@@ -47,6 +48,7 @@ function App() {
         <Route path="/impact" element={<Impact />}></Route>
         <Route path="resources" element={<Resources />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/donation" element={<Donation />}></Route>
     </Routes>
   </Router>
   )
