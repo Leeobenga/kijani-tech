@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 import ecologo from "../assets/leaf2.jpg"
 
+
 const PageNavbar = () => {
     return (
     <>
-        <nav className="contact-navbar">
+        <nav className="donateNav">
             <span>
                 <img src={ecologo} alt="ecologo" width="35" className="ecologo"/>
                 Mkulima Green Solutions

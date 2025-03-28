@@ -71,7 +71,7 @@ const Fundraising = () => {
                             <div className="status-bar">
                                 <div className="progress" style={{width:`${riseWidth(index)}%` }}></div>
                             </div>
-                            <span className="goal-rise"><span className="goal">GOAL ${obj.goal}</span><span className="rise">RISE ${obj.rise}</span></span>
+                            <span className="goal-rise"><span className="goal">RAISED ${obj.rise}</span><span className="rise">GOAL ${obj.goal}</span></span>
                             <Link to="/donation"><button className="cause-button">DONATE NOW</button></Link>
                         </article>
                     ))}
