@@ -2,10 +2,14 @@
     display: grid;
     grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 80rem) minmax(5rem, 1fr);
     font-family: inter;
-    overflow: hidden
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .first-donation-container {
-    grid-column: 2 / 3
+    grid-column: 2 / 3;
+    box-sizing: border-box;
+    display: flex;
+    gap: 3rem
 }
 
 .donateNav {    
@@ -26,6 +30,37 @@
 }
 
 .donate-img {
-    width: 50rem;
+    width: 70rem;
     border-radius: 20px;
 }
+
+.donate-article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.donate-article {
+    display: flex;
+    gap: 20px
+}
+
+.description {
+    display: flex;
+    flex-direction: column
+}
+
+.donation-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10px
+}
+
+.description h3 {
+    margin: 0
+}
+
+.description p {
+    margin: 10px 0
+}
+
