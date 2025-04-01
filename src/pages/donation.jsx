@@ -4,19 +4,19 @@ import { useLocation } from "react-router-dom";
 import PageNavbar from "../components/navbar";
 import donate from "../assets/donate.jpg";
 import secondDonate from "/src/assets/donate.webp";
+import { Link } from "react-router-dom";
 import "../components/Donation.css"
 
 
 const Donation = ({articles}) => {      
-    const [filteredArticles, setFilteredArticles] = useState([]);
-    console.log(filteredArticles)
+    const [filteredArticles, setFilteredArticles] = useState([]);    
     const [searchParams] = useSearchParams();
+    const [total, setTotal] = useState(0)
     let currentIndex; 
 
     useEffect(() => {
         if (articles) {
-            const currentArticleId = parseInt(searchParams.get("articleId"), 10);
-            console.log(currentArticleId);            
+            const currentArticleId = parseInt(searchParams.get("articleId"), 10);                      
 
             if (!currentArticleId) {
                 console.warn("No article ID found in query params");
@@ -24,8 +24,7 @@ const Donation = ({articles}) => {
 
             const remainingArticles = articles.filter(
                 article => article.id !== currentArticleId);
-            setFilteredArticles(remainingArticles);
-            console.log(remainingArticles)
+            setFilteredArticles(remainingArticles);            
         }
     }, [articles, searchParams]);
 
@@ -43,11 +42,15 @@ const Donation = ({articles}) => {
     const riseWidth = (index) => {
         return (articles[index].rise / articles[index].goal) * 100
     };
-    console.log(currentIndex)
+
+    const handleClick = amount => {
+        setTotal(prevTotal => prevTotal + amount);
+    };
+    
     return (
         <>
          <PageNavbar />
-         <div className="donation-main-container">
+        <div className="donation-main-container">
             <div className="first-donation-container">
                 <img src={donate} alt="donate"  className="donate-img"/>
                 <div className="donate-article-container">
@@ -56,8 +59,8 @@ const Donation = ({articles}) => {
                         <div key={article.id} className="donate-article">
                             <img src={article.img} alt="" className="donation-img" />
                             <div className="description">
-                                <h4 className="">{article.header}</h4>
-                                <p>{article.description}</p>
+                                <Link to={`/donation?articleId=${article.id}`} style={{textDecoration: "none", color:" #0F7C01"}}><h4 className="donation-header">{article.header}</h4></Link>
+                                <p>{article.details}</p>
                                 <p className="article-goal">GOAL: ${article.goal}</p>
                             </div>                            
                         </div>                    
@@ -74,27 +77,35 @@ const Donation = ({articles}) => {
                 <div className="donation-details">
                     <h1>{articles[currentIndex].header}</h1>
                     <p>
-                        Training farmers to optimize production using solar pumps enhances efficiency, 
-                        reduces <br /> costs, and promotes sustainability. Solar-powered irrigation provides a reliable
-                        water <br /> source, increasing yields while reducing dependency on expensive and polluting 
-                        fossil fuels. 
+                        {articles[currentIndex].description} 
                     </p> 
-                    <div className="donation-contact"></div> 
+                    <div className="donation-contact">
+                        <img src={articles[currentIndex].img2} alt="description-img" className="description-img"/>
+                    </div> 
                     <div className="donation">
                         <span>Your Donation:</span>
-                        <span>$</span>
+                        <span>${total}</span>
                     </div>  
                     <div className="donation-buttons">
-                        <button className="donation-button">$10</button>
-                        <button className="donation-button">$20</button>
-                        <button className="donation-button">$50</button>
-                        <button className="donation-button">$100</button>
-                        <button className="donation-button">$1000</button>
+                    {[10, 20, 50, 100, 1000].map(amount => (
+                            <button
+                                key={amount}
+                                onClick={() => handleClick(amount)}
+                                className="donation-button"
+                            >
+                                ${amount}
+                            </button>
+                        ))}
                     </div> 
                 </div>  
-                 
             </div>
-         </div>
+            <div className="donation-form-container">
+                <h2>Details of you</h2>
+                <form action="#">
+                    
+                </form>
+            </div>
+        </div>
         </>
     )
     

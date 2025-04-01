@@ -107,30 +107,30 @@
     
 }
 
-.donation-description h1 {    
+.donation-details h1 {    
     font-size: 2rem;    
     color: #303030    
 }
 
-.donation-description p{
+.donation-details p{
     margin: 1rem 0;
     font-size: 1.2rem;
     color: #828282
 }
 
 .donation-contact {
-    background-image: url(../assets/donate.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
     border-radius: 10px;
-    color: white;
-    background-color: rgba(255, 157, 0, 0.7);
-    width: 42rem;
-    height: 25rem;
+    color: white;    
+    width: 50rem; 
+      
     margin: 2rem 0
 }
+
+.description-img {
+    width: 70%;
+    border-radius: 10px
+}
+
 
 .donation {
     height: 6rem;
@@ -164,6 +164,16 @@
 .donation-button:hover {
     background-color: darkgoldenrod;
     cursor: pointer
+}
+
+.donation-header:hover {
+    color: darkgreen
+}
+
+.donation-form-container {
+    grid-column: 2 / 3;
+    margin: 3rem 0;
+    color: #303030
 }
 
 
