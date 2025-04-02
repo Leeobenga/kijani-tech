@@ -33,25 +33,29 @@
     margin-bottom: 8rem
 }
 
-.contact-navbar span {
+.contact-navbar span,
+.donateNav span {
     display: flex;
     align-items: center;
     margin: 25px
 }
 
-.contact-navbar ul {
+.contact-navbar ul,
+.donateNav ul {
     display: flex;
     justify-content: space-around;;
     align-items: center;
 }
 
-.contact-navbar ul li {
+.contact-navbar ul li,
+.donateNav ul li {
     list-style-type: none;
     margin-right: 20px;
     
 }
 
-.contact-navbar  ul li button{
+.contact-navbar  ul li button,
+.donateNav ul li button{
     background-color: #0f7c01;
     color: white;
     border: none;
@@ -584,6 +588,8 @@ form > label {
     margin-top: -40px;
     padding-left: 13rem
 }
+
+
 
 
 

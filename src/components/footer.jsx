@@ -11,6 +11,7 @@ import calendarIcon from "/src/assets/icons8-calendar-20.png"
 import forestImg from "/src/assets/bavarian-forest-3385966.jpg"
 import sendIcon from "/src/assets/icons8-send-30 (1).png"
 import copyright from "/src/assets/icons8-copyright-10.png"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
@@ -61,11 +62,11 @@ const Footer = () => {
             <div className="highlights quick-links">
                 <h2>Quick Link</h2>
                 <ul>
-                    <li><a href="#">Water Conservation</a></li>
-                    <li><a href="#">Global Warming</a></li>
-                    <li><a href="#">climate Adaptation</a></li>
-                    <li><a href="#">Urban planning</a></li>
-                    <li><a href="#">Energy Consulting</a></li>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/about">About us</Link></li>
+                    <li><Link to="/solutions">Solutions</Link></li>
+                    <li><Link to="/impact">Impact</Link></li>
+                    <li><Link to="/resources">Resources</Link></li>
                 </ul>
             </div>
             <div className="highlights recent-news">

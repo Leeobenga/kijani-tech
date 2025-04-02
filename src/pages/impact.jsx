@@ -8,7 +8,7 @@ const Impact = () => {
     return (
         <>
         <div className="main-contact-container">
-        <nav className="contact-navbar">
+            <nav className="contact-navbar">
                 <span>
                     <img src={ecologoImpact} alt="ecologo" width="35" className="ecologo"/>
                     Mkulima Green Solutions
