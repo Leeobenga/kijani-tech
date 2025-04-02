@@ -23,6 +23,7 @@ import training from "/src/assets/train-farmer.avif"
 import solarPump from "/src/assets/solar-pump.png"
 import equipFarmer from "/src/assets/equipFarmer.jpg"
 import "./App.css"
+import "./components/Donation.css"
 
 
 
