@@ -15,7 +15,7 @@ const Donation = ({articles}) => {
     let currentIndex; 
 
     useEffect(() => {
-        if (articles) {
+        if (articles && articles.length > 0) {
             const currentArticleId = parseInt(searchParams.get("articleId"), 10);                      
 
             if (!currentArticleId) {
@@ -25,6 +25,8 @@ const Donation = ({articles}) => {
             const remainingArticles = articles.filter(
                 article => article.id !== currentArticleId);
             setFilteredArticles(remainingArticles);            
+        } else {
+            console.warn("Articles are not yet available");
         }
     }, [articles, searchParams]);
 
