@@ -24,6 +24,7 @@ import solarPump from "/src/assets/solar-pump.png"
 import equipFarmer from "/src/assets/equipFarmer.jpg"
 import "./App.css"
 import "./Donation.css"
+import "./questions.css"
 
 
 

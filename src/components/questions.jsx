@@ -27,8 +27,7 @@ const Questions = () => {
         <div className="question-article-container">
             <article className="question-article">
                 <h4>ASK SOMETHING</h4>
-                <h1>Keep the scene green by taking the lead</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod rerum illo nesciunt dolorem ipsa earum debitis nisi doloremque voluptas, vel est, et sunt delectus, eaque modi magni laboriosam corporis!</p>
+                <h1>Keep the scene green by taking the lead</h1>                
                 <div className="questions">
                     <p className="question">What is the purpose of the company?</p>
                     <button onClick={toggleQuestionOne}><span className="add">{showQuestionOne ? "-": "+"}</span></button>
