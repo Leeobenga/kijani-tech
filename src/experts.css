@@ -1,0 +1,85 @@
+.expert-team {
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 80rem) minmax(5rem, 1fr);
+    background-color: #efefd480;
+    padding: 5rem 0 8rem 0
+}
+
+.expert-cards {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.expert {
+    background-color: white;
+    border: 1px solid #e3e3e3;
+    padding: 4rem 3rem;
+    border-radius: 10px;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem
+}
+
+.expert-details {
+    display: flex;
+    flex-direction: column
+}
+
+.expert-details h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0; 
+}
+
+.expert-details p {
+    color:#868686
+}
+
+.expert-socials-container {
+    display: flex;    
+    justify-content: center;
+    gap: 1rem;
+       
+}
+
+.expert-social {
+    width: 40px;
+    height: 40px;
+    background-color: #d7f5d1;
+    border-radius: 50%;
+    position: relative; 
+}
+
+.expert-social-logo {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 15px
+}
+
+.expert-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%
+}
+
+.title {
+    color: gray;
+    font-size: 1rem
+}
+.expert2 {
+    background-color: white;
+    border: 1px solid #e3e3e3;
+    padding: 4rem 3rem;
+    border-radius: 10px;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

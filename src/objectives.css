@@ -1,0 +1,118 @@
+.objectives {
+    grid-column: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    background-color:#efefd480;
+    padding-bottom: 8rem;
+    
+}
+
+.heading {
+    grid-column: 2 / 3;
+    padding: 3rem;
+    max-width: 900px
+}
+
+.heading h1 {
+    color: #303030;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 3rem
+}
+
+.heading h4 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #0f7c01
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;    
+    margin: auto;
+    
+}
+
+.service {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    width: 400px;
+    height: auto;
+       
+}
+
+.cards {   
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.cards h3 {
+    color: #000
+}
+
+.service p {
+    font-size: 1rem;
+    color: #868686;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #0f7c01;
+}
+
+.img-div {
+    padding: 15px;
+    background-color: #d7f5d1;
+    border-radius: 50%;
+    width: 150px;
+    margin: 30px
+}
+
+.food-secure {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.obj-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px
+}
+
+.obj-dot{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color:#0f7c01;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.obj-dot.active {
+    background-color:#031c00;
+    transform: scale(1.3)
+}

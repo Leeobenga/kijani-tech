@@ -25,6 +25,14 @@ import equipFarmer from "/src/assets/equipFarmer.jpg"
 import "./App.css"
 import "./Donation.css"
 import "./questions.css"
+import "./main-navbar.css"
+import "./objectives.css"
+import "./overview.css"
+import "./process.css"
+import "./fundraising.css"
+import "./blogs.css"
+import "./footer.css"
+import "./experts.css"
 
 
 
