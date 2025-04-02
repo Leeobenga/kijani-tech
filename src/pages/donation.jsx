@@ -5,7 +5,7 @@ import donate from "../assets/donate.jpg";
 import secondDonate from "/src/assets/donate.webp";
 import { Link } from "react-router-dom";
 import Footer from "../components/footer"
-import "../components/Donation"
+import "../components/Donation.css"
 
 
 const Donation = ({articles}) => {      
