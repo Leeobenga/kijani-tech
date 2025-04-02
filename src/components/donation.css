@@ -176,5 +176,18 @@
     color: #303030
 }
 
+.donate-button {
+    background-color: #0F7C01;
+    color: white;
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px
+}
+
+.donate-input {
+    width: 30rem
+}
+
 
 

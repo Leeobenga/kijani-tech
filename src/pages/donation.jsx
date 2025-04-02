@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import PageNavbar from "../components/navbar";
 import donate from "../assets/donate.jpg";
 import secondDonate from "/src/assets/donate.webp";
 import { Link } from "react-router-dom";
+import Footer from "../components/footer"
 import "../components/Donation.css"
 
 
@@ -102,10 +102,20 @@ const Donation = ({articles}) => {
             <div className="donation-form-container">
                 <h2>Details of you</h2>
                 <form action="#">
-                    
+                    <label htmlFor="fullName">Full name</label>
+                    <input type="text" id="full-name" placeholder="Full Name" className="donate-input"/>
+                    <label htmlFor="e-mail">Email</label>
+                    <input type="email" id="e-mail" placeholder="example@yourname.com" className="donate-input" />
+                    <label htmlFor="phone-number">Phone number</label>
+                    <input type="number" id="phone-number" placeholder="+1 111 1111 1111" className="donate-input" />                    
                 </form>
+                <div className="payment-method">
+                    <p>Select payment method</p>
+                </div>
+                <button type="submit" className="donate-button">Donate now</button>               
             </div>
         </div>
+        <Footer />
         </>
     )
     
