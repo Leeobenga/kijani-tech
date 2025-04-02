@@ -84,8 +84,7 @@ const Fundraising = () => {
                             </div>
                             <span className="goal-rise"><span className="goal">RAISED ${obj.rise}</span><span className="rise">GOAL ${obj.goal}</span></span>
                             <Link 
-                                to={`/donation?articleId=${obj.id}`}
-                                
+                                to={`/donation?articleId=${obj.id}`}                                
                             >
                                 <button 
                                     className="cause-button"   
