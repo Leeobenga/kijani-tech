@@ -99,7 +99,7 @@
 
 @media (max-width: 480px) {
     .ask-questions {
-        width: 28%;
+        width: 27%;
         display: flex;
         flex-direction: column
     }
