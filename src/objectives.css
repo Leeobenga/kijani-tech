@@ -121,3 +121,10 @@
         width: 38%
     }
 }
+
+@media (max-width: 480px) {
+    .objectives {
+        width: 28.5%;
+        
+    }
+}
