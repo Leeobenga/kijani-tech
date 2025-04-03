@@ -140,5 +140,8 @@
     .service {
         width: 300px;        
     }
+    .food-secure {
+        width: 100%
+    }
 
 }
