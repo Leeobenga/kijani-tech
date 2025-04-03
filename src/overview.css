@@ -90,3 +90,82 @@ article h1 {
 article p {
     color: #868686;
 }
+
+@media (max-width: 1024px) {
+    .slideshow {
+        width: 80%;
+        height: 400px;
+    }
+
+    .mission h1 {
+        font-size: 3rem;
+    }
+
+    .stripes, .second-stripe {
+        display: none
+    }
+}
+
+/* 720px */
+@media (max-width: 720px) {
+    .slideshow {
+        width: 100%;
+        height: 350px;
+        margin-right: 0;
+    }
+
+    .mission h1 {
+        font-size: 2.5rem;
+    }
+
+    .mission p {
+        font-size: 1rem;
+    }
+
+    .stripes, .second-stripe {
+        display: none
+    }
+}
+
+/* 560px */
+@media (max-width: 560px) {
+    .overview {
+        width: 100%
+    }
+    .slideshow {
+        width: 100%;
+        height: 300px;
+    }
+
+    .mission h1 {
+        font-size: 2rem;
+    }
+
+    .mission p {
+        font-size: 0.9rem;
+    }
+
+    .stripes, .second-stripe {
+        display: none
+    }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+    .slideshow {
+        width: 100%;
+        height: 250px;
+    }
+
+    .mission h1 {
+        font-size: 1.8rem;
+    }
+
+    .mission p {
+        font-size: 0.85rem;
+    }
+
+    .stripes, .second-stripe {
+       display: none
+    }
+}

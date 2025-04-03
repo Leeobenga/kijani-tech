@@ -134,3 +134,122 @@ video {
     color:#303030;
     cursor: pointer;
 }
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    #navbar {
+        padding: 20px 80px;
+    }
+    .overlay h1 {
+        font-size: 3rem;
+    }
+    .overlay p {
+        font-size: 1.2rem;
+    }
+    .overlay
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate();
+        width: 80%
+    }
+    #overlay-button {
+        margin-left: 5rem
+    }
+}
+
+@media (max-width: 720px) {
+    #navbar {
+        padding: 15px 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overlay h1 {
+        font-size: 2.5rem;
+    }
+    .overlay
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate();
+        width: 80%
+    }
+    #overlay-button {
+        margin-left: 5rem
+    }
+}
+
+@media (max-width: 560px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    #navbar ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    #navbar ul.show {
+        display: flex;
+    }
+
+    .overlay h1 {
+        font-size: 1.5rem;
+    }
+    .overlay
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate();
+        width: 80%
+    }
+    #overlay-button {
+        margin-left: 5rem
+    }
+    
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        padding: 10px 20px;
+    }
+    
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+    
+    .overlay p {
+        font-size: 0.9rem;
+    }
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate();
+        width: 80%
+    }
+    #overlay-button {
+        margin-left: 5rem
+    }
+}
+
