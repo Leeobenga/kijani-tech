@@ -155,7 +155,7 @@ article p {
 /* 480px */
 @media (max-width: 480px) {
     .overview {
-        width: 28%;
+        width: 28.5%;
         display: flex;
         flex-direction:column;
         justify-content: center;
@@ -169,7 +169,7 @@ article p {
     }
 
     .mission h1 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .mission p {
