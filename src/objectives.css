@@ -124,7 +124,13 @@
 
 @media (max-width: 480px) {
     .objectives {
-        width: 28.5%;
-        
+        width: 28.5%;        
+    }
+    .heading {
+        padding: 0.5rem;
+        max-width: 100%
+    }
+    .heading h1 {
+        font-size: 1.2rem
     }
 }
