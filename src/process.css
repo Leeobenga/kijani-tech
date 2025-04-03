@@ -86,3 +86,9 @@
         width: 38%
     }
 }
+
+@media (max-width: 480px) {
+    .go-green {
+        width: 30%
+    }
+}
