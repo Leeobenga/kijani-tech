@@ -133,4 +133,7 @@
     .heading h1 {
         font-size: 1.2rem
     }
+    .service {
+        width: 300px
+    }
 }
