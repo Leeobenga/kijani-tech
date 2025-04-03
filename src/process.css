@@ -80,3 +80,9 @@
 .process-line {    
     color: gray
 }
+
+@media (max-width: 560px) {
+    .go-green {
+        width: 38%
+    }
+}

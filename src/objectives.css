@@ -115,3 +115,9 @@
     background-color:#031c00;
     transform: scale(1.3)
 }
+
+@media (max-width: 560px) {
+    .objectives {
+        width: 38%
+    }
+}

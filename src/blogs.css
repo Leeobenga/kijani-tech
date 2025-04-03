@@ -105,3 +105,9 @@
     width: 20px;
     margin-right: 5px;    
 }
+
+@media (max-width: 560px) {
+    .blogs {
+        width: 38%
+    }
+}

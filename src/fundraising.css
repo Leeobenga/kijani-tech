@@ -89,3 +89,9 @@
     background-color: #0f1110;
     cursor: pointer;
 }
+
+@media (max-width: 560px) {
+    .fundraising-causes-container {
+        width: 38%
+    }
+}
