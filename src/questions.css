@@ -103,6 +103,9 @@
         display: flex;
         flex-direction: column
     }
+    #rice-farm {
+        height: 30rem
+    }
     .question-article-container {
         padding: 1rem
     }
