@@ -144,5 +144,11 @@
     .food-secure {
         width: 100%
     }
+    .service p {
+        font-size: 0.6rem
+    }
+    .service h3 {
+        font-size: 1rem
+    }
 
 }
