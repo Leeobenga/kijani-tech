@@ -14,7 +14,8 @@
 
 .heading {    
     padding: 3rem;
-    max-width: 900px
+    width: 100%;
+    max-width: 100%
 }
 
 .heading h1 {
@@ -34,11 +35,14 @@
     position: relative;
     overflow: hidden;    
     margin: auto;
+    width: 100%;
+    box-sizing: border-box;
     
 }
 
-.service {
-    flex: 1;
+.service {    
+    max-width: 100%;
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -51,16 +55,19 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     width: 400px;
-    height: auto;
-       
+    height: auto;       
 }
 
 .cards {   
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    display: flex;    
+    width: 100%;
     gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 5rem;
+    transition: transform 0.5s ease-in-out
+    
 }
 
 .cards h3 {
@@ -118,7 +125,25 @@
 
 @media (max-width: 560px) {
     .objectives {
-        width: 38%
+        width: 100%;
+        overflow: hidden;
+        align-items: start;
+        padding: 1rem
+    }
+    
+    .heading h1 {
+        font-size: 2rem
+    }
+    .service {
+         width: 100%
+          
+    }
+    .cards {  
+        width: 300%;      
+        flex-direction: row;
+        gap: 0
+               
+    
     }
 }
 
@@ -142,7 +167,7 @@
         width: 350px;        
     }
     .food-secure {
-        width: 100%
+        width: 350px
     }
     .service p {
         font-size: 0.6rem

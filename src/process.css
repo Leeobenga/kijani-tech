@@ -2,7 +2,16 @@
     grid-column: 1 / 4; 
     display: flex;
     flex-direction: column;
-    margin-top: 5rem
+    margin-top: 5rem;
+    border: 2px solid red
+   
+}
+
+.process-main {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid red
 }
 
 .process-heading {   
@@ -22,7 +31,12 @@
 
 .slider {
     justify-self: center;
-    gap: 6rem  ;    
+    gap: 6rem  ;  
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 2px solid red
 }
 
 .content-wrapper {
@@ -31,12 +45,19 @@
     align-items: center;
     width: 100%;
     position: relative;
-    text-align: center
+    text-align: center;
+    border: 2px solid red
 }
 
 .circle-container {
-    flex: 1 0 100%;
-    text-align: center
+    flex: 0 0 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border: 2px solid red
 }
 
 .big-circle {
@@ -82,13 +103,9 @@
 }
 
 @media (max-width: 560px) {
-    .go-green {
-        width: 38%
-    }
-}
-
-@media (max-width: 480px) {
-    .go-green {
-        width: 30%
+    .slider {
+        display: flex;
+        width: 100%;
+        overflow: hidden
     }
 }
