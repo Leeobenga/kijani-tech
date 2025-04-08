@@ -1,179 +1,207 @@
+
+Copy
 .objectives {
-    grid-column: 1 / 4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    height: auto;
-    background-color:#efefd480;
-    padding-bottom: 8rem;
-    
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  background-color: #efefd480;
+  padding-bottom: 8rem;
 }
 
-.heading {    
-    padding: 3rem;
-    width: 100%;
-    max-width: 100%
+.heading {
+  padding: 3rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .heading h1 {
-    color: #303030;
-    padding-top: 0;
-    margin-top: 0;
-    font-size: 3rem
+  color: #303030;
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3rem); /* Fluid typography */
 }
 
 .heading h4 {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    color: #0f7c01
+  margin: 0;
+  color: #0f7c01;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
 .slider-container {
-    position: relative;
-    overflow: hidden;    
-    margin: auto;
-    width: 100%;
-    box-sizing: border-box;
-    
+  position: relative;
+  overflow: hidden;
+  margin:  0 auto;
+  width: 100%;
+  max-width: 1200px; /* Prevent overly wide layouts */
 }
 
-.service {    
-    max-width: 100%;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1.5rem 1.5rem 0 1.5rem;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    width: 400px;
-    height: auto;       
+/* Cards Container */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto 5rem auto;
+  transition: transform 0.5s ease-in-out;
 }
 
-.cards {   
-    justify-content: center;
-    align-items: center;
-    display: flex;    
-    width: 100%;
-    gap: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    transition: transform 0.5s ease-in-out
-    
-}
-
-.cards h3 {
-    color: #000
-}
-
-.service p {
-    font-size: 1rem;
-    color: #868686;
-    margin-bottom: 1rem;
+/* Individual Cards */
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1.5rem 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Fallback */
+  flex: 0 0 100%; /* Mobile: 1 card per view */
 }
 
 .service h3 {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: #0f7c01;
+  margin-top: 1rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* Fluid font */
+  color: #0f7c01;
+}
+
+.service p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem); /* Fluid font */
+  color: #868686;
+  margin-bottom: 1rem;
 }
 
 .img-div {
-    padding: 15px;
-    background-color: #d7f5d1;
-    border-radius: 50%;
-    width: 150px;
-    margin: 30px
+  padding: 15px;
+  background-color: #d7f5d1;
+  border-radius: 50%;
+  width: clamp(80px, 10vw, 150px); /* Responsive icon circle */
+  margin: 30px 0;
 }
 
 .food-secure {
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    
+  width: 100%;
+  height: clamp(180px, 30vw, 250px); /* Responsive image */
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
 }
+
+/* Dots (Mobile) */
 .obj-dots {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.obj-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #0f7c01;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.obj-dot.active-dot { /* Match React's className (active-dot, not active) */
+  background-color: #031c00;
+  transform: scale(1.3);
+}
+
+/* ----- Breakpoints ----- */
+/* Tablet (720px+) */
+@media (min-width: 720px) {
+    .objectives {
+        grid-column: 1 / 3;
+    }
+  .cards {
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px
+    transform: none !important; /* Override React's inline style */
+  }
+
+  .service {
+    flex: 0 1 calc(50% - 2rem); /* 2 cards per row */
+    max-width: calc(50% - 2rem);
+  }
 }
 
-.obj-dot{
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    background-color:#0f7c01;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .service {
+    flex: 0 1 calc(33.333% - 2rem); /* 3 cards per row */
+    max-width: calc(33.333% - 2rem);
+  }
 }
 
-.obj-dot.active {
-    background-color:#031c00;
-    transform: scale(1.3)
-}
-
+/* Mobile Slider (560px-) - Matches React's isSmallScreen */
 @media (max-width: 560px) {
     .objectives {
-        width: 100%;
+        grid-column: 1 / 2
+    }
+    .slider-container {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
         overflow: hidden;
-        align-items: start;
-        padding: 1rem
     }
-    
-    .heading h1 {
-        font-size: 2rem
-    }
-    .service {
-         width: 100%
-          
-    }
-    .cards {  
-        width: 300%;      
-        flex-direction: row;
-        gap: 0
-               
-    
-    }
-}
+  .cards {
+    width: 300%;
+    display: flex; /* Force horizontal scroll for slider */
+    gap: 0; /* Remove gap for seamless slides */
+  }
 
+  .service {
+    width: 100vw;
+    flex: 0 0 100vw; /* Full-width cards */
+    max-width: 100vw;
+    margin: 0; 
+    box-sizing: border-box;
+    padding: 1.5rem/* Add horizontal spacing */
+  }
+
+  /* ... (keep your existing styles) ... */
+
+/* Mobile (480px and below) */
 @media (max-width: 480px) {
     .objectives {
-        width: 28.5%;  
-        padding: 0.5rem      
+      padding: 1rem; /* Reduce padding */
+      padding-bottom: 6rem;
     }
+  
     .heading {
-        padding: 0.5rem;
-        max-width: 100%
+      padding: 1.5rem 1rem; /* Adjust heading padding */
     }
+  
     .heading h1 {
-        font-size: 1.2rem
+      font-size: 1.5rem; /* Smaller font */
     }
-    .cards {
-        width: 100%;
-        gap: 0
-    }
+  
     .service {
-        width: 350px;        
+      padding: 1rem; /* Tighter spacing */
+      width: 90%; /* Slightly narrower cards */
+      margin: 0 auto; /* Center align */
     }
+  
+    .img-div {
+      width: 80px; /* Smaller icon circle */
+      margin: 15px 0; /* Reduce margin */
+    }
+  
     .food-secure {
-        width: 350px
+      height: 150px; /* Shorter image */
     }
-    .service p {
-        font-size: 0.6rem
+  
+    .cards {
+      margin-bottom: 3rem; /* Less bottom space */
     }
-    .service h3 {
-        font-size: 1rem
+  
+    /* Adjust dots for better visibility */
+    .obj-dot {
+      width: 8px;
+      height: 8px;
     }
-
+  }
 }
