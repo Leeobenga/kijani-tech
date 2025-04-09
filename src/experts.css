@@ -121,6 +121,10 @@
     }
 
     .expert-details h2 {
-        font-size: 1.2rem
+        font-size: 1rem
+    }
+
+    .expert-details p {
+        font-size: 0.8rem
     }
 }
