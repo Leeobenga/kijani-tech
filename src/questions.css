@@ -71,7 +71,7 @@
 .questions-answer {
  margin-top: -10px;
  width: 100%;
- font-size: 12px;
+ font-size: 1rem;
  
 }
 
@@ -79,6 +79,28 @@
     position: absolute;
     top: -60%;
     left: 5%
+}
+
+@media (max-width: 1024px) {
+    .ask-questions {
+        width: 100vw;
+        display: flex;
+        flex-direction: column
+    }
+}
+
+@media (max-width: 720px) {
+    .ask-questions {
+        width: 100vw;
+        display: flex;
+        flex-direction: column
+    }
+    #rice-farm {
+        height: 500px
+    }
+    .questions-answer {
+        font-size: 1rem
+    }
 }
 
 @media (max-width: 560px) {
@@ -98,14 +120,15 @@
     .question-article h1 {
         font-size: 1.5rem
     }
+    .questions-answer {
+        font-size: 12px
+    }
     
 }
 
 @media (max-width: 480px) {
     .ask-questions {
-        width: 100vw;
-        display: flex;
-        flex-direction: column
+        width: 100vw;        
     }
     #rice-farm {
         height: 15rem
@@ -118,6 +141,9 @@
     }
     .question {
         font-size: 0.9rem
+    }
+    .questions-answer {
+        font-size: 12px
     }
     
 }
