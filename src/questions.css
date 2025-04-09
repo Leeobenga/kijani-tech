@@ -83,9 +83,13 @@
 
 @media (max-width: 560px) {
     .ask-questions {
-        width: 38%;
+        width: 100vw;
         display: flex;
         flex-direction: column
+    }
+
+    #rice-farm {
+        height: 400px
     }
     .question-article-container {
         padding: 1rem
@@ -99,7 +103,7 @@
 
 @media (max-width: 480px) {
     .ask-questions {
-        width: 28.5%;
+        width: 100vw;
         display: flex;
         flex-direction: column
     }
