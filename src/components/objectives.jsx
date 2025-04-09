@@ -13,7 +13,7 @@ const Objectives = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
+            setIsMobile(window.innerWidth <= 464);
         };
         handleResize();
         window.addEventListener('resize', handleResize);
