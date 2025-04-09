@@ -110,8 +110,17 @@
     }
 }
 
-@media(max-width: 464px) {
+@media(max-width: 464px) {    
     .blog-header h1 {
         font-size: 1.5rem
+    }
+
+    .expert,
+    .expert2 {
+        width: 100vw
+    }
+
+    .expert-details h2 {
+        font-size: 1.2rem
     }
 }
