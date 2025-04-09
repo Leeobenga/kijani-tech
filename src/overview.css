@@ -141,14 +141,11 @@ article p {
 }
 
 /* 560px */
-@media (max-width: 560px) {
-    .overview {
-        width: 80%;
-        margin: auto
-    }
+@media (max-width: 560px) {    
 
     .slideshow {
-        width: 100%;
+        width: 80%;
+        margin: auto
         height: 300px;
     }
 
@@ -166,14 +163,11 @@ article p {
 }
 
 /* 480px */
-@media (max-width: 480px) {
-    .overview {
-        width: 80%;
-        margin: auto
-    }
+@media (max-width: 480px) {   
 
     .slideshow {
-        width: 100%;
+        width: 80%;
+        margin: auto;
         height: 250px;
     }
 
