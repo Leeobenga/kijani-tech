@@ -30,7 +30,7 @@ main {
     grid-column: 2 / 3;   
     background-color: #0f7c01;
     position: absolute;
-    top: 100rem;
+    top: 95rem;
     z-index: 1;
     border-radius: 30px;
     height: 15rem;
