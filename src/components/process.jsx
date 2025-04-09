@@ -18,7 +18,7 @@ const Process = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 464);
+            setIsMobile(window.innerWidth <= 560);
         };
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
@@ -40,7 +40,13 @@ const Process = () => {
                 <h1>Go Green And Reduce Your Carbon Footprint</h1>
             </section>
             <section className="process-main" style={isMobile ? {overflow: "hidden" } : {}}>
-                <div className="slider" style={isMobile ? { transform: `translateX(-${currentSlide * 100}%)`, display: "flex", transition: "transform 0.5s ease-in-out"} : { display: "grid", gridTemplateColumns: "repeat(4, 1fr)"}}>
+                <div className="slider" style={isMobile ? { 
+                    transform: `translateX(-${currentSlide * 100}%)`, 
+                    display: "flex", transition: "transform 0.5s ease-in-out"
+                    } : { 
+                        display: "grid", 
+                        gridTemplateColumns: "repeat(4, 1fr)"
+                    }}>
                    {steps.map((step, index) => (
                     <div key={index} className="circle-container">
                         <div className="content-wrapper">
@@ -54,11 +60,11 @@ const Process = () => {
                    ))}
                 </div>
                 {isMobile && (
-                    <div className="obj-dots">
+                    <div className="slider-dots">
                         {steps.map((_, index) => (
                             <span
                                 key={index}
-                                className={`obj-dot ${index === currentSlide ? "active" : ""}`}
+                                className={`slider-dot ${index === currentSlide ? "active" : ""}`}
                                 onClick={() => setCurrentSlide(index)}
                             />
                         ))}
