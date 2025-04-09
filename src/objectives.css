@@ -1,13 +1,16 @@
 .objectives {  
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 80rem) minmax(5rem, 1fr);
-  flex-direction: column;
+  display: flex;  
+  flex-direction: column;  
   text-align: center; 
   background-color: #efefd480;
   padding-bottom: 8rem;
   width: 100vw
   
+}
+
+Carousel {
+  border: 1px solid black
 }
 
 .heading {
@@ -27,24 +30,7 @@
   font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
-.slider-container {
-  grid-column: 1 / -1;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  overflow: hidden;
-}
-
-/* Cards Container */
-.cards {  
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Individual Cards */
-.service {
+.service {  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,60 +72,6 @@
   
 }
 
-/* Dots (Mobile) */
-.obj-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
 
-.obj-dot {
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  background-color: #0f7c01;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.obj-dot.active-dot { /* Match React's className (active-dot, not active) */
-  background-color: #031c00;
-  transform: scale(1.3);
-}
-
-@media (min-width: 720px) {
-  .heading {
-    grid-column: 2 / 3;
-    padding: 3rem
-  }
-  .service {
-    flex: 0 1 calc(33.333% -1.5rem);
-    max-width: calc(33.333% - 1.5rem);
-  }
-}
-
-@media (min-width: 560px) {
-  .slider-container {
-    grid-column: 2 / 3;
-    width: 100%;
-    margin-left: auto
-  }
-  .cards {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem
-  }
-  .service {
-    width: 100%;
-    flex: 0 1 calc(50% -1.5rem);
-    max-width: calc(50% - 1.5rem)
-  }
-}
-
-@media (max-width: 480px) {
-  
-}
 
 
