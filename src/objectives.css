@@ -77,12 +77,13 @@
 }
 
 @media (max-width: 464px) {
+  .heading {
+    width: 100vw
+  }
   .carousel-container {
     width: 100vw
   }
-  .service {
-    width: 100vw
-  }
+  
 }
 
 
