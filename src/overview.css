@@ -1,7 +1,7 @@
 .overview {
     grid-column: 2 / 3;
     position: relative;
-    align-items: center;
+    align-items: center;    
 }
 
 .slideshow{  
@@ -91,11 +91,23 @@ article p {
     color: #868686;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { 
+    .overview {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100vw
+    }  
     .slideshow {
-        width: 80%;
+        width: 50%;
         height: 400px;
+        margin: auto
     }
+    
+   .mission {
+    width: 100vw
+   }
 
     .mission h1 {
         font-size: 3rem;
@@ -108,10 +120,11 @@ article p {
 
 /* 720px */
 @media (max-width: 720px) {
+
     .slideshow {
-        width: 100%;
+        width: 80%;
         height: 350px;
-        margin-right: 0;
+        margin: auto;
     }
 
     .mission h1 {
@@ -130,8 +143,8 @@ article p {
 /* 560px */
 @media (max-width: 560px) {
     .overview {
-        width: 38%;
-        
+        width: 80%;
+        margin: auto
     }
 
     .slideshow {
@@ -155,12 +168,8 @@ article p {
 /* 480px */
 @media (max-width: 480px) {
     .overview {
-        width: 28.5%;
-        display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.8rem
+        width: 80%;
+        margin: auto
     }
 
     .slideshow {
