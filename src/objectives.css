@@ -76,6 +76,12 @@
   
 }
 
+@media (max-width: 464px) {
+  .service {
+    width: 100vw
+  }
+}
+
 
 
 
