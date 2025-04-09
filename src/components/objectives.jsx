@@ -42,6 +42,10 @@ const Objectives = () => {
     ];
 
     const responsive = {
+        superLargeDesktop: {
+            breakpoint: {max: 4000, min: 3000},
+            item: 4
+        },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
           items: 3
@@ -72,7 +76,7 @@ const Objectives = () => {
                 slidesToSlide={2}
                 infinite={true}
                 autoPlay={isMobile}
-                autoPlaySpeed={1000}
+                autoPlaySpeed={4000}
                 keyBoardControl={true}
                 customTransition='all .5'
                 transitionDuration={500}

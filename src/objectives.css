@@ -4,13 +4,17 @@
   flex-direction: column;  
   text-align: center; 
   background-color: #efefd480;
-  padding-bottom: 8rem;
+  padding: 8rem;
   width: 100vw
   
+}.carousel-container {
+ 
 }
 
-Carousel {
-  border: 1px solid black
+.react-multiple-carousel__arrow {
+  background: rgba(0,0,0,0.5) !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
 }
 
 .heading {
@@ -71,6 +75,7 @@ Carousel {
   border-radius: 0 0 10px 10px
   
 }
+
 
 
 
