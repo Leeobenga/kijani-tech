@@ -127,4 +127,18 @@
     .expert-details p {
         font-size: 0.8rem
     }
+
+    .expert-img {
+        width: 100px;
+        height: 100px
+    }
+
+    .expert-social {
+        width: 25px;
+        height: 25px
+    }
+
+    .expert-social-logo {
+        width: 10px
+    }
 }
