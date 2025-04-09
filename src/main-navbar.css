@@ -249,6 +249,7 @@ video {
         width: 80%
     }
     #overlay-button {
+        top: 85%;
         margin-left: 5rem
     }
 }
