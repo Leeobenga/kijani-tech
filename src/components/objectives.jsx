@@ -68,7 +68,7 @@ const Objectives = () => {
                 <h1>Promoting Sustainable Agricultural Practices</h1>
             </section>
             <Carousel
-                swipeable={false}
+                swipeable={isMobile ? true : false}
                 draggable={false}
                 showDots={true}
                 responsive={responsive}
