@@ -86,7 +86,7 @@
 
 @media (max-width: 560px) {
     .expert-team {
-        width: 38%;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         padding: 0
@@ -96,4 +96,12 @@
         flex-direction: column;
         gap: 1rem
     }
+    .expert,
+    .expert2 {
+        margin: auto
+    }
+}
+
+@media(max-width: 464px) {
+    
 }
