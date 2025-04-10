@@ -106,8 +106,33 @@
     margin-right: 5px;    
 }
 
-@media (max-width: 560px) {
+.prev-blog,
+.next-blog {
+    height: 2rem;
+    position: absolute;
+    bottom: 3rem
+}
+
+.next-blog {
+    right: 3rem
+}
+
+.prev-blog {
+    left: 3rem
+}
+
+
+@media (max-width: 1024px) {
     .blogs {
-        width: 38%
+        width: 100vw;
+        grid-column: 1 / -1
+    }
+    .blog-heading {
+        grid-column: 1 / -1;
+        margin-bottom: 1rem
+    }
+    .cards-holder {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
