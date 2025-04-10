@@ -157,6 +157,10 @@
         padding: 2rem 1rem
     }
 
+    .expert-image {
+        margin: auto
+    }
+
     .expert-details h2 {
         font-size: 1rem
     }
