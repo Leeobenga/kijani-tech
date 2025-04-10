@@ -137,11 +137,6 @@
 }
 
 @media (max-width: 464px) {
-    .fundraising-causes-container {
-        width: 100vw;
-        border: 1px solid black
-    }
-
     .slider-container {
         width: 100vw
     }
