@@ -44,8 +44,8 @@ const Expert = () => {
                         <img src={business} alt="CEO" className="expert-img" />
                     </div>
                     <div className="expert-details">
-                        <h2>Robert Obenga <span className="title">/ DEVELOPER</span></h2>
-                        <p>Code is my canvas, and every line is written with intention-to solve, to serve, and to spark change.</p>
+                        <h2>Robert Obenga <span className="title">/ COFOUNDER</span></h2>
+                        <p>A visionary with a deep commitment to transforming agricultural systems through technology.</p>
                         <div className="expert-socials-container">
                             <div className="expert-social">
                                 <img src={facebook} alt="facebook" className="expert-social-logo" />

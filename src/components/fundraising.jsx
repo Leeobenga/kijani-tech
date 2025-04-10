@@ -72,7 +72,7 @@ const Fundraising = () => {
                 <h1>Fundraising Causes</h1>
             </section>
             <div className="slider-container">
-                <section className="cards" style={ isSmallScreen ? {transform: `translateX(-${currentIndex * 100}%)`} : {}}>
+                <section className="cards" style={ isSmallScreen ? {transform: `translateX(-${currentIndex * 100}vw)`} : {}}>
                     {articles.map((obj, index) => (
                         <article key={index} id={obj.id} 
                         className={`cause ${index === currentIndex ? "active" : ""}`}>

@@ -16,6 +16,14 @@
     margin-top: 0;
     color: #303030;
 }
+.slider-container {
+    display: flex;
+    overflow: hidden
+}
+.cards {
+    display: flex;
+    gap: 2rem
+}
 
 .cause, .blog {    
     width: 400px;    
@@ -90,8 +98,43 @@
     cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+    .fundraising-causes-container {
+        grid-column: 1 / -1;
+        width: 100vw;
+    }
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+
+@media (max-width: 720px) {
+    .cards {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 560px) {
     .fundraising-causes-container {
-        width: 38%
+        grid-column: 1 / 2;
+        width: 100vw;
+        max-width: 100vw
     }
+    .slider-container {
+        width: 300vw
+    }
+    .cards {        
+        max-width: 100%;
+        gap: 0;
+        overflow: hidden
+    }
+    .cause {
+        width: 100%;
+        overflow: hidden
+    }
+}
+
+@media (max-width: 464px) {
+
 }

@@ -84,6 +84,37 @@
     gap: 2rem;
 }
 
+@media (max-width: 1024px) {
+    .expert-team {
+        width: 100vw;
+        display: flex;
+        flex-direction: column
+    }
+
+    .blog-heading {
+        padding: 2rem
+    }
+
+    .expert-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem
+    }
+
+    .expert,
+    .expert2 {
+        margin: 0 auto;
+        width: 80%
+    }
+}
+
+@media (max-width: 720px) {
+    .blog-heading {
+        padding: 1rem
+    }
+   
+}
+
 @media (max-width: 560px) {
     .expert-team {
         width: 100vw;
