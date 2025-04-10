@@ -578,8 +578,8 @@ form > label {
 
 .blog-dots-container{
     width: 70px;
-    bottom: -4%;
-    left: 30%
+    bottom: 1rem;
+    left: 45%
 }
 
 .causes-dot {
