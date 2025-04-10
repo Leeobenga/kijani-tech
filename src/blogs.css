@@ -161,5 +161,9 @@
     .blog p {
         font-size: 0.8rem
     }
+    .next-blog {
+        right: 0.5rem
+    }
+    
 
 }
