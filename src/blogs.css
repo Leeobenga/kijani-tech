@@ -161,9 +161,16 @@
     .blog p {
         font-size: 0.8rem
     }
-    .next-blog {
-        right: 0
+
+    .next-blog,
+    .prev-blog {
+        bottom: 19rem
     }
-    
+    .next-blog {
+        right: 0.5rem
+    }
+    .prev-blog {
+        left: 1rem
+    }
 
 }
