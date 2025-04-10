@@ -110,15 +110,16 @@
 .next-blog {
     height: 2rem;
     position: absolute;
-    bottom: 3rem
+    bottom: 22rem;
+    border: none
 }
 
 .next-blog {
-    right: 3rem
+    right: 1rem
 }
 
 .prev-blog {
-    left: 4rem
+    left: 2rem
 }
 
 
