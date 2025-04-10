@@ -120,7 +120,7 @@
         width: 100vw;
         display: flex;
         flex-direction: column;
-        padding: 0
+        padding: 0 0 3rem 0
     }
     .expert-cards {
         display: flex;
@@ -152,7 +152,7 @@
 
     .expert,
     .expert2 {
-        width: 80vw;
+        width: 75vw;
         flex-direction: column;
         padding: 2rem 1rem
     }
