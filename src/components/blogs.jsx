@@ -65,7 +65,7 @@ return (
     <section className="blog-heading">
         <h4>OUR LATEST BLOG</h4>
         <div className="blog-header">
-            <h1>Let's checkout our all latest news</h1>
+            <h1>Let's checkout all our latest news</h1>
             <button className="blog-button">Read More Blogs <span className="button-span">»</span></button>
         </div>
     </section>

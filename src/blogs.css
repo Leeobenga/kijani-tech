@@ -136,3 +136,9 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 464px) {
+    .blog-header h1 {
+        font-size: 1.8rem
+    }
+}
