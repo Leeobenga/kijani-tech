@@ -17,7 +17,7 @@ const Fundraising = () => {
         header: "Empower a farmer with solar irrigation",
         description: "Make 120 farmers receive solar irrigation and get started with smart farming",
         goal: 45000,
-        rise: 5000
+        rise: 100
         },
         {
         id: 2,
@@ -25,7 +25,7 @@ const Fundraising = () => {
         header: "Train and Equip a Climate-Smart Farmer",
         description: "600 farmers trained in smart farming to optimize production and conserve the environment",
         goal: 22500,
-        rise: 8000
+        rise: 200
         },
         {
         id: 3,
@@ -33,7 +33,7 @@ const Fundraising = () => {
         header: "Help Spread Awareness & Drive Change",
         description: "Expand outreach and education in rural communities on smart farming methods",
         goal: 6000,
-        rise: 1500
+        rise: 350
         }
     ];
 
