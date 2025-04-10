@@ -150,4 +150,15 @@
         width: 80vw
     }
 
+    .blog-img {
+        height: 17rem
+    }
+
+    .blog h2 {
+        font-size: 1rem
+    }
+    .blog p {
+        font-size: 0.8rem
+    }
+
 }
