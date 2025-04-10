@@ -147,13 +147,13 @@
     }
 
     .expert-cards {
-        margin: 0 auto;
-        flex-direction: column
+        margin: 0 auto;        
     }
 
     .expert,
     .expert2 {
-        width: 80vw
+        width: 80vw;
+        flex-direction: column
     }
 
     .expert-details h2 {
