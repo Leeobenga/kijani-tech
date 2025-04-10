@@ -142,4 +142,12 @@
         font-size: 1.8rem
     }
 
+    .cards-holder {
+        margin: auto
+    }
+
+    .blog {
+        width: 80vw
+    }
+
 }
