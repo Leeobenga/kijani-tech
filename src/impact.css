@@ -130,6 +130,10 @@
     .achievement {
       padding: 2rem;
     }
+
+    .goal h1 {
+        margin-left: 2rem
+    }
   
     .goal-img {
       max-width: 100%;
