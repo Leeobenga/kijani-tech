@@ -88,113 +88,16 @@ form > label {
 }
 
 
-.about, .solution, .impact {
+.about,
+.solution,
+.impact {
     grid-column: 2 / 3
 }
 
-.about-header, .solution-header, .impact-header, .resources-header {
+.solution-header, .impact-header, .resources-header {
     grid-column: 2 / 3;
     text-align: center;
     margin-bottom: 8rem
-}
-
-.about-header h1, .solution-header h1, .impact-header h1, .resources-header h1 {
-    color:#0f7c01;
-    font-size: 5rem
-}
-
-.about-header p, .solution-header p, .impact-header p {
-    color:#303030;
-    font-size: 2.5rem
-}
-.about-header h1:hover {
-    cursor: pointer;
-    color: #303030
-}
-
-.about-header p:hover {
-    cursor: pointer;
-    color: gray;
-    font-size: 2.5rem
-}
-
-.vision, .about-mission {
-    display: flex;
-    gap: 8rem;
-    align-items: center;
-    margin-bottom: 6rem;
-    padding-bottom: 6rem;
-    border-bottom: 1px solid #303030
-}
-
-.about-mission {
-    flex-direction: row-reverse
-}
-
-.vision-statement h1, .about-mission h1, .matters h1{
-    font-size: 5rem;
-    color: #303030;
-    margin-bottom: 0
-}
-
-.vision-statement p, .about-mission p, .matters ul li{
-    font-size: 2rem;
-    color: gray
-}
-
-.vision-statement h1:hover {
-    color:#0f7c01;
-    cursor: pointer
-}
-
-.about-mission h1:hover {
-    color:#0f7c01;
-    cursor: pointer
-}
-
-.vision-statement p:hover {
-    color:#4a4949;
-    cursor: pointer
-}
-
-.about-mission p:hover{
-    color:#4a4949;
-    cursor: pointer
-}
-
-.vision-img, .about-mission-img {
-    width: 35rem;
-    height: 40rem;
-    border-radius: 20%;    
-}
-
-.matters {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #303030;
-    padding-left: 5rem;
-    padding-bottom: 3rem
-}
-
-.matters ul li {    
-    margin: 40px
-}
-
-.matters h1:hover {
-    cursor: pointer;
-    color:#0f7c01
-}
-
-.matters ul li:hover {    
-    color: #4a4949;
-    cursor: pointer
-}
-
-.about-end {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 600;
-    color:#0f7c01
 }
 
 .solution-header h1:hover {
