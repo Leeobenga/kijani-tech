@@ -262,7 +262,7 @@ video {
 
     .overlay2 {
         justify-content: center;
-        left: 10rem
+        left: 12rem
     }
 
     .overlay2 span:not(:last-child) {
