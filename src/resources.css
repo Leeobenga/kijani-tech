@@ -411,6 +411,11 @@
     .tip-intro {
       font-size: 1.2rem;
     }
+
+    .next-button,
+    .prev-button {
+        top: 50rem
+    }
   
     .dots-container,
     .tip-dots-container,
