@@ -37,6 +37,7 @@ import "./page-header.css"
 import "./about-us.css"
 import "./solutions.css"
 import "./impact.css"
+import "./resources.css"
 
 
 
