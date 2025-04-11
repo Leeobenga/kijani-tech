@@ -1,0 +1,153 @@
+.impact {
+    grid-column: 2 / 3
+}
+
+.impact-header {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin-bottom: 8rem
+}
+
+.achievement {
+    padding: 5rem
+}
+
+.achievement-img {
+    width: 80rem;
+    border-radius: 5px
+}
+
+.main-goal {
+    display: flex;
+    gap: 5rem
+}
+
+.goal-img {
+    width: 40rem;
+    border-radius: 5px;   
+}
+
+.goal-statement {
+    margin: 3rem 0;
+    font-size: 3rem;
+    color:#0f7c01;
+    text-align: center;
+    border-top: 1px solid #303030;
+    padding: 3rem 0 0 0 
+}
+
+
+@media (max-width: 1024px) {
+    .impact {
+        width: 100vw;
+        grid-column: 1 / -1;        
+    }
+    .achievement {
+      padding: 4rem;
+    }  
+  
+    .achievement-img {
+      width: 80%;
+      margin-left: 5rem
+    }
+
+    .main-goal {
+        flex-direction: column;        
+    }
+
+    .main-goal ul li {
+        padding: 0;
+        
+    }
+  
+    .goal-img {
+      width: 80%;
+      margin-left: 5rem
+    }
+  
+    .goal-statement {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 720px) {
+    .achievement {
+        padding: 2rem;
+        text-align: start
+    }
+
+    .achievement h1,
+    .goal h1 {
+        font-size: 4rem
+    }
+
+    .main-goal {
+      flex-direction: column;
+      gap: 3rem;
+    }    
+  
+    .achievement-img {
+      width: 80%;
+      margin-left: 4rem
+    }
+  
+    .goal-img {
+      width: 80%;      
+    }
+  
+    .goal-statement {
+      font-size: 2.2rem;
+      padding-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .achievement {
+      padding: 3rem;
+    }
+
+    .achievement-img,
+    .goal-img {
+        margin-left: 2rem
+    }
+
+    .achievement h1,
+    .goal h1 {
+        font-size: 3rem
+    }
+
+    .achievement ul li,
+    .main-goal ul li {
+        font-size: 1.5rem
+    }
+  
+    .goal-statement {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 464px) {
+    .achievement {
+      padding: 2rem;
+    }
+
+    .achievement h1,
+    .goal h1 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0
+    }
+
+    .goal h1 {
+        margin-left: 2rem;       
+    }
+  
+    .goal-img {
+      max-width: 100%;
+    }
+  
+    .goal-statement {
+      font-size: 1.6rem;
+      padding-top: 1.5rem;
+    }
+  }

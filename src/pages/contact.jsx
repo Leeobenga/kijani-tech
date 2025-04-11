@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 import Footer from "../components/footer"
 import ecologo from "/src/assets/leaf2.jpg"
+import facebook from "/src/assets/icons8-facebook-20.png"
+import x from "/src/assets/icons8-x-20.png"
+import instagram from "/src/assets/icons8-instagram-20.png"
+import linkedIn from "/src/assets/icons8-linkedin-20.png"
 
 const Contact = () => {
     return (
@@ -51,10 +55,10 @@ const Contact = () => {
                     <h2>Reach out to us</h2>
                     <p>Mail us at info@mkulimagreens.co.ke You can also reach out using this social platform</p>
                     <div className="logo-container">
-                    <a href="#" className="social-link"><img src="/src/assets/icons8-facebook-20.png" alt="facebook" className="social-logo" /></a>
-                    <a href="#" className="social-link"><img src="/src/assets/icons8-x-20.png" alt="x" class="social-logo" /></a>
-                    <a href="#" className="social-link"><img src="/src/assets/icons8-instagram-20.png" alt="instagram" className="social-logo" /></a>
-                    <a href="#" className="social-link"><img src="/src/assets/icons8-linkedin-20.png" alt="linkedin" className="social-logo" /></a>
+                    <a href="#" className="social-link"><img src={facebook} alt="facebook" className="social-logo" /></a>
+                    <a href="#" className="social-link"><img src={x} alt="x" class="social-logo" /></a>
+                    <a href="#" className="social-link"><img src={instagram} alt="instagram" className="social-logo" /></a>
+                    <a href="#" className="social-link"><img src={linkedIn} alt="linkedin" className="social-logo" /></a>
                     </div>
                 </div>
             </div>

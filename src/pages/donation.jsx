@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import PageNavbar from "../components/navbar";
 import donate from "../assets/donate.jpg";
-import secondDonate from "/src/assets/donate.webp";
 import { Link } from "react-router-dom";
 import Footer from "../components/footer"
 
@@ -15,7 +14,7 @@ const Donation = ({articles}) => {
     let currentIndex; 
 
     useEffect(() => {
-        if (articles) {
+        if (articles && articles.length > 0) {
             const currentArticleId = parseInt(searchParams.get("articleId"), 10);                      
 
             if (!currentArticleId) {
@@ -25,6 +24,8 @@ const Donation = ({articles}) => {
             const remainingArticles = articles.filter(
                 article => article.id !== currentArticleId);
             setFilteredArticles(remainingArticles);            
+        } else {
+            console.warn("Articles are not yet available");
         }
     }, [articles, searchParams]);
 
@@ -49,7 +50,7 @@ const Donation = ({articles}) => {
     
     return (
         <>
-         <PageNavbar />
+        <PageNavbar />
         <div className="donation-main-container">
             <div className="first-donation-container">
                 <img src={donate} alt="donate"  className="donate-img"/>

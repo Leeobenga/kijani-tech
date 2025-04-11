@@ -1,0 +1,95 @@
+.objectives {  
+  grid-column: 1 / -1;
+  display: flex;  
+  flex-direction: column;  
+  text-align: center; 
+  background-color: #efefd480;
+  padding: 8rem;
+  width: 100vw
+  
+}.carousel-container {
+ 
+}
+
+.react-multiple-carousel__arrow {
+  background: rgba(0,0,0,0.5) !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+}
+
+.heading {
+  grid-column: 1 / -1;
+  padding: 1.5rem
+}
+
+.heading h1 {
+  color: #303030;
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 3rem); /* Fluid typography */
+}
+
+.heading h4 {
+  margin: 0;
+  color: #0f7c01;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+.service {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1.5rem 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  max-width: 400px; /* Fallback */
+  flex: 0 0 100vw; /* Mobile: 1 card per view */
+}
+
+.service h3 {
+  margin-top: 1rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* Fluid font */
+  color: #0f7c01;
+}
+
+.service p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem); /* Fluid font */
+  color: #868686;
+  margin-bottom: 1rem;
+}
+
+.img-div {
+  padding: 15px;
+  background-color: #d7f5d1;
+  border-radius: 50%;
+  width: clamp(80px, 10vw, 150px); /* Responsive icon circle */
+  margin: 30px 0;
+}
+
+.food-secure {
+  width: 113%;  
+  height: clamp(220px, 30vw, 250px); /* Responsive image */
+  object-fit: cover;
+  border-radius: 0 0 10px 10px
+  
+}
+
+@media (max-width: 464px) {
+  .objectives {
+    padding: 0
+  }
+  .heading {
+    width: 100vw
+  }
+  .carousel-container {
+    width: 100vw
+  }
+  
+}
+
+
+
+
+

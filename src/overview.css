@@ -1,0 +1,185 @@
+.overview {
+    grid-column: 2 / 3;
+    position: relative;
+    align-items: center;    
+}
+
+.slideshow{  
+    position: relative;   
+    width: 450px; 
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10rem;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    animation: slideshow 9s infinite;
+    
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 6s;
+}
+
+.slide:nth-child(3) {
+    animation-delay: 12s;
+}
+
+.slide:nth-child(4) {
+    animation-delay: 18s;
+}
+
+@keyframes slideshow {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.stripes {
+    height: 300px;
+    width: 2rem;
+    background-color: #0f7c01;
+    position: absolute;
+    top: 40%;
+    left: -3%
+}
+
+.second-stripe {
+    height: 300px;
+    width: 2rem;
+    background-color: #0f7c01;
+    position: absolute;
+    top: 40%;
+    right: 61%
+}
+
+.mission {
+    padding: 4rem
+}
+
+article h3 {
+    color: #0f7c01;
+    margin: 0;
+}
+
+article h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+    color: #303030
+}
+
+article p {
+    color: #868686;
+}
+
+@media (max-width: 1024px) { 
+    .overview {
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100vw
+    }  
+    .slideshow {
+        width: 50%;
+        height: 400px;
+        margin: auto
+    }
+    
+   .mission {
+    width: 100vw
+   }
+
+    .mission h1 {
+        font-size: 3rem;
+    }
+
+    .stripes, .second-stripe {
+        display: none
+    }
+}
+
+/* 720px */
+@media (max-width: 720px) {
+
+    .slideshow {
+        width: 80%;
+        height: 350px;
+        margin: auto;
+    }
+
+    .mission h1 {
+        font-size: 2.5rem;
+    }
+
+    .mission p {
+        font-size: 1rem;
+    }
+
+    .stripes, .second-stripe {
+        display: none
+    }
+}
+
+/* 560px */
+@media (max-width: 560px) {    
+
+    .slideshow {
+        width: 80%;
+        margin: auto
+        height: 300px;
+    }
+
+    .mission h1 {
+        font-size: 2rem;
+    }
+
+    .mission p {
+        font-size: 0.9rem;
+    }
+
+    .stripes, .second-stripe {
+        display: none
+    }
+}
+
+/* 480px */
+@media (max-width: 480px) {   
+
+    .slideshow {
+        width: 80%;
+        margin: auto;
+        height: 250px;
+    }
+
+    .mission h1 {
+        font-size: 1rem;
+    }
+
+    .mission p {
+        font-size: 0.85rem;
+    }
+
+    .stripes, .second-stripe {
+       display: none
+    }
+}

@@ -1,0 +1,174 @@
+.go-green {
+    grid-column: 1 / -1; /* Better than 1/4 for grid spanning */
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100%;
+    overflow: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .process-main {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Prevent over-stretching on large screens */
+    margin: 0 auto; /* Center align */
+  }
+  
+  .process-heading {
+    text-align: center;
+    padding: 0 1rem; /* Add side padding */
+  }
+  
+  .process-heading h4 {
+    color: #0f7c01;
+    margin-bottom: 0;
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Fluid typography */
+  }
+  
+  .process-heading h1 {
+    color: #303030;
+    font-size: clamp(1.8rem, 4vw, 3rem); /* Fluid typography */
+    margin-top: 0.5rem;
+  }
+  
+  .slider {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem 1rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Better scrolling behavior */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  /* Hide scrollbar but keep functionality */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%; /* Full width slides for mobile */
+    scroll-snap-align: start; /* Snap to each slide */
+  }
+  
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .big-circle {
+    background-color: #efefd480;
+    border-radius: 50%;
+    width: clamp(150px, 30vw, 210px); /* Responsive sizing */
+    height: clamp(150px, 30vw, 210px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .process-img,
+  .process-img2 {
+    width: 40%; /* Relative to parent */
+    max-width: 90px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .small-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f7c01;
+    border-radius: 50%;
+    width: clamp(40px, 10vw, 55px);
+    height: clamp(40px, 10vw, 55px);
+    color: white;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    margin-top: 1rem;
+  }
+  
+  .process-line {
+    color: gray;
+    margin: 1rem 0;
+  }
+
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0f7c01;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .slider-dot.active {
+    background: darkgreen;
+  }
+
+  
+  /* Mobile Breakpoints */
+  @media (max-width: 768px) {
+    .go-green {
+      margin-top: 3rem;
+    }
+    
+    .slider {
+      gap: 1rem;
+      padding: 1rem;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .slider {
+        width: 400%;        
+        gap: 0; /* Remove gap for full-width slides */
+    }
+
+    .circle-container {
+        flex: 0 0 100%;
+        max-width: 100vw
+    }
+    
+    .content-wrapper {
+        width: 100vw;
+        min-width: 100vw; /* Full viewport width */
+        padding: 0 1rem;
+        scroll-snap-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .big-circle {
+        width: 150px;
+        height: 150px;
+    }
+  }
+  
+  @media (max-width: 464px) {
+    .process-heading h1 {
+      font-size: 1.5rem;
+    }
+    
+    .big-circle {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .process-img,
+    .process-img2 {
+      width: 50%;
+    }
+  }

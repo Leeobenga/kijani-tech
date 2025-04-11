@@ -1,9 +1,9 @@
-import woman from "/src/assets/woman-6553477.jpg"
+import woman from "/src/assets/tracy-photo.png"
 import facebook from "/src/assets/icons8-facebook-20.png"
 import x from "/src/assets/icons8-x-20.png"
 import linkedIn from "/src/assets/icons8-linkedin-20.png"
 import instagram from "/src/assets/icons8-instagram-20.png"
-import business from "/src/assets/business-695489.jpg"
+import business from "/src/assets/2x2 visa passport.jpg"
 
 const Expert = () => {
     return (
@@ -22,7 +22,7 @@ const Expert = () => {
                     </div>
                     <div className="expert-details">
                         <h2>Tracy Obirika <span className="title">/ FOUNDER</span></h2>
-                        <p>A naturalist is a person who studies the natural world, including plants, animals, and their environments.…</p>
+                        <p>True leadership is about vision, resilience, and the courage to create solutions where others see problems</p>
                         <div className="expert-socials-container">
                             <div className="expert-social">
                                 <img src={facebook} alt="facebook" className="expert-social-logo" />
@@ -44,8 +44,8 @@ const Expert = () => {
                         <img src={business} alt="CEO" className="expert-img" />
                     </div>
                     <div className="expert-details">
-                        <h2>Rio Ferdinand <span className="title">/ ENGINEER</span></h2>
-                        <p>A naturalist is a person who studies the natural world, including plants, animals, and their environments.…</p>
+                        <h2>Robert Obenga <span className="title">/ COFOUNDER</span></h2>
+                        <p>A visionary with a deep commitment to transforming agricultural systems through technology.</p>
                         <div className="expert-socials-container">
                             <div className="expert-social">
                                 <img src={facebook} alt="facebook" className="expert-social-logo" />
