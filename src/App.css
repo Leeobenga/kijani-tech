@@ -88,65 +88,16 @@ form > label {
 }
 
 
-.about,
+
 .solution,
 .impact {
     grid-column: 2 / 3
 }
 
-.solution-header, .impact-header, .resources-header {
+.impact-header, .resources-header {
     grid-column: 2 / 3;
     text-align: center;
     margin-bottom: 8rem
-}
-
-.solution-header h1:hover {
-    cursor: pointer;
-    color: #303030
-}
-
-.solution-header p:hover {
-    cursor: pointer;
-    color: gray;
-    font-size: 2.5rem
-}
-
-.problem {
-    font-size: 3rem;
-    color:#303030;
-    margin: 0 0 4rem 0;
-    text-align: center
-}
-
-.irrigation, .payment, .technology {
-    display: flex;
-    gap: 8rem;
-    padding: 6rem 0 6rem 0;
-    border-bottom: 1px solid #4a4949
-    
-}
-
-.irrigation-statement, .payment-statement, .technology-statement {
-    width: 35rem
-}
-
-.irrigation-statement h1, .payment-statement h1, .technology-statement h1, .achievement h1, .goal h1{
-    font-size: 5rem;
-    margin: 0 0 5rem 0;   
-    color:#303030
-}
-
-.irrigation-statement ul li, .payment-statement ul li, .technology-statement  ul li, .achievement ul li, .goal ul li {
-    color:#4a4949;
-    font-size: 2rem;
-    margin: 2rem
-}
-
-.irrigation-img, .payment-img, .tech-img {
-    width: 30rem;
-    height: 40rem;
-    object-fit: cover;
-    border-radius: 20px    
 }
 
 .achievement {

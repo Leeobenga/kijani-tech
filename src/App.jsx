@@ -35,6 +35,7 @@ import "./footer.css"
 import "./experts.css"
 import "./page-header.css"
 import "./about-us.css"
+import "./solutions.css"
 
 
 
