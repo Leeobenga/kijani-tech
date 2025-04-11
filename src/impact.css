@@ -131,9 +131,15 @@
       padding: 2rem;
     }
 
+    .achievement h1,
     .goal h1 {
-        margin-left: 2rem;
-        font-size: 2rem
+        font-size: 2rem;
+        text-align: center;
+        padding: 0
+    }
+
+    .goal h1 {
+        margin-left: 2rem;       
     }
   
     .goal-img {
