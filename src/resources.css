@@ -377,6 +377,10 @@
     .tip-intro {
       font-size: 1.3rem;
     }
+
+    .next-button {
+        left: 22rem
+    }
   }
   
   @media (max-width: 464px) {
