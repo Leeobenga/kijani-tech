@@ -259,5 +259,9 @@ video {
         top: 85%;
         margin-left: 5rem
     }
+
+    .overlay2 {
+        justify-content: center
+    }
 }
 
