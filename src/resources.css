@@ -408,5 +408,9 @@
       font-size: 1.2rem;
     }
   
-    
+    .dots-container,
+    .tip-dots-container,
+    .blog-dots-container {
+      display: none;
+    }
   }
