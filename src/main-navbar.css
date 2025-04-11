@@ -263,5 +263,9 @@ video {
     .overlay2 {
         justify-content: center
     }
+
+    .overlay2 span:not(:last-child) {
+        margin-right: 1rem
+    }
 }
 
