@@ -383,7 +383,7 @@
     .resource-insights {
       margin-bottom: 3rem;
     }
-  
+    
     .instructions-container {
       margin: 3rem 0;
       gap: 2rem;
@@ -408,9 +408,5 @@
       font-size: 1.2rem;
     }
   
-    .dots-container,
-    .tip-dots-container,
-    .blog-dots-container {
-      display: none;
-    }
+    
   }
