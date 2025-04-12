@@ -23,8 +23,8 @@ const Footer = () => {
                 </div>
                 <div className="contact-info">
                 <h2>Our Location</h2>
-                <p>2416 Mapleview DriveTampa,</p>
-                <p>FL 33634</p>
+                <p>2416 Muthangari Drive</p>
+                <p>00100 Westlands</p>
                 </div>
             </article>
             <article className="location-info">
@@ -33,8 +33,8 @@ const Footer = () => {
                 </div>
                 <div className="contact-info">
                     <h2>Call us</h2>
-                    <p>Telephone : 0029129102320</p>
-                    <p>Mobile : 000 2324 39493</p>
+                    <p>Telephone : +254729726505</p>
+                    <p>Mobile : +254729726505</p>
                 </div>                
             </article>
             <article className="location-info">
@@ -43,8 +43,8 @@ const Footer = () => {
                 </div>
                 <div className="contact-info">
                     <h2>Our Email</h2>
-                    <p>Main Email : contact@website</p>
-                    <p>ComInquiries : Info@mail.com</p>
+                    <p>info@mkulimagreensolutions.com</p>
+                    
                 </div>  
             </article>
         </div>

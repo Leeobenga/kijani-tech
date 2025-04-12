@@ -32,7 +32,7 @@ const Header = () => {
                     </nav>
                     <div className="overlay">
                         <h1>EMPOWERING THE FUTURE OF SMALLHOLDER FARMERS</h1>
-                        <p>Providing a cost-effective, sustainable and energy-efficient solution by replacing expensive fuel solar pumps with solar energy</p>
+                        <p>Providing a cost-effective, sustainable and energy-efficient solution by replacing expensive fuel pumps with solar energy</p>
                     </div>
                     <div id="overlay-button">
                         <button id="join-btn" type="button">Join Us Now <span>»</span></button>
