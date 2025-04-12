@@ -22,7 +22,7 @@ const Expert = () => {
                     </div>
                     <div className="expert-details">
                         <h2>Tracy Obirika <span className="title">/ FOUNDER</span></h2>
-                        <p>True leadership is about vision, resilience, and the courage to create solutions where others see problems</p>
+                        <p>Blending urban perspective from Nairobi with insights from rural farm visits, leading strategic direction and innovation in climate smart agriculture.</p>
                         <div className="expert-socials-container">
                             <div className="expert-social">
                                 <img src={facebook} alt="facebook" className="expert-social-logo" />
@@ -44,8 +44,8 @@ const Expert = () => {
                         <img src={business} alt="CEO" className="expert-img" />
                     </div>
                     <div className="expert-details">
-                        <h2>Robert Obenga <span className="title">/ COFOUNDER</span></h2>
-                        <p>A visionary with a deep commitment to transforming agricultural systems through technology.</p>
+                        <h2>Robert Obenga <span className="title">/ CTO</span></h2>
+                        <p>Driving our tech vision to build scalable, human-centered solutions that transform agriculture. | </p>
                         <div className="expert-socials-container">
                             <div className="expert-social">
                                 <img src={facebook} alt="facebook" className="expert-social-logo" />
