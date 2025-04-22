@@ -1,5 +1,5 @@
 import { useState } from "react"
-import rice from "/src/assets/rice-7176354.jpg"
+import rice from "/src/assets/rice-7176354.webp"
 
 const Questions = () => {
 

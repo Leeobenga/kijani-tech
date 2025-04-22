@@ -1,9 +1,9 @@
 
 import { useState, useEffect } from "react"
-import environmentProtection from "/src/assets/environmental-protection-326923.jpg"
+import environmentProtection from "/src/assets/environmental-protection-326923.webp"
 import comment from "/src/assets/icons8-comment-48.png"
-import bavarian from "/src/assets/bavarian-forest-3385966.jpg"
-import recycle from "/src/assets/recycle-57136.jpg"
+import bavarian from "/src/assets/bavarian-forest-3385966.webp"
+import recycle from "/src/assets/recycle-57136.webp"
 
 const Blog = () => {
 

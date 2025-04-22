@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import pepper from "/src/assets/pepper-7200198.jpg"
-import photovoltaic from "/src/assets/photovoltaic-system-2742302_1280.jpg"
-import Tanzania from "/src/assets/tanzania-278361.jpg"
+import pepper from "/src/assets/pepper-7200198.webp"
+import photovoltaic from "/src/assets/photovoltaic-system-2742302_1280.webp"
+import Tanzania from "/src/assets/tanzania-278361.webp"
 
 
 
