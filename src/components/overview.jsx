@@ -1,7 +1,7 @@
-import cabbage from "/src/assets/cabbage-3722498.jpg"
-import wallTunnel from "/src/assets/wall-tunnel-4181125_1280.jpg"
-import planting from "/src/assets/planting-2839128.jpg"
-import photovoltaic from "/src/assets/photovoltaic-system-2742302_1280.jpg"
+import cabbage from "/src/assets/cabbage-3722498.webp"
+import wallTunnel from "/src/assets/wall-tunnel-4181125_1280.webp"
+import planting from "/src/assets/planting-2839128.webp"
+import photovoltaic from "/src/assets/photovoltaic-system-2742302_1280.webp"
 
 const Overview = () => {
     return (
