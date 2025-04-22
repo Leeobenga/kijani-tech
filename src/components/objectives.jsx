@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import greenHouse from "/src/assets/greenhouse-3247181_1920.jpg"
-import renewable from "/src/assets/renewable-1989416.jpg"
+import greenHouse from "/src/assets/greenhouse-3247181_1920.webp"
+import renewable from "/src/assets/renewable-1989416.webp"
 import safetyCareIcon from "/src/assets/icons8-safety-care-48.png"
 import paymentHistoryIcon from "/src/assets/icons8-payment-history-48.png"
-import irrigationSystem from "/src/assets/irrigation-7262563.jpg"
+import irrigationSystem from "/src/assets/irrigation-7262563.webp"
 import assetsIcon from "/src/assets/icons8-safety-care-48.png"
 
 const Objectives = () => {
