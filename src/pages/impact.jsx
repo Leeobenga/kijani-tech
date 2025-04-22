@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/footer"
 import ecologoImpact from "../assets/leaf2.jpg"
-import farming from "../assets/nel-ranoko.jpg"
-import tractor from "../assets/tractor.jpg"
+import farming from "../assets/nel-ranoko.webp"
+import tractor from "../assets/tractor.webp"
 
 const Impact = () => {
     return (

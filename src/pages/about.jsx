@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import Footer from "../components/footer"
 import iconLeaf from "../assets/leaf2.jpg"
-import pumpkin from "../assets/pumpkin.jpg"
-import solarPanel from "../assets/solar-panel.jpg"
+import pumpkin from "../assets/pumpkin.webp"
+import solarPanel from "../assets/solar-panel.webp"
 
 const About = () => {
     return (

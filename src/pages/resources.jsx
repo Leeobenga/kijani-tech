@@ -6,14 +6,14 @@ import submit from "../assets/submit.png"
 import installation from "../assets/installation.png";
 import pay from "../assets/pay.png";
 import solarSystem from "../assets/solar-system.png";
-import drop from "../assets/drop.jpg";
-import soil from "../assets/soil.jpg"
-import renewableEnergy from "../assets/renewable.jpg";
-import crops from "../assets/crops.jpg";
+import drop from "../assets/drop.webp";
+import soil from "../assets/soil.webp"
+import renewableEnergy from "../assets/renewable.webp";
+import crops from "../assets/crops.webp";
 import neem from "../assets/neem-oil.webp";
-import agroforestry from "../assets/agroforestry.jpg";
-import greenWaste from "../assets/green-waste.jpg";
-import education from "../assets/educate.jpg";
+import agroforestry from "../assets/agroforestry.webp";
+import greenWaste from "../assets/green-waste.webp";
+import education from "../assets/educate.webp";
 import ecologoResource from "../assets/leaf2.jpg"
 
 const Resources = () => {

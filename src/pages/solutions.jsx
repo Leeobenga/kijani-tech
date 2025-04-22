@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/footer"
 import ecologoSolution from "../assets/leaf2.jpg"
-import irrigationSolution from "../assets/irrigation2.jpg"
-import paymentSolution from "../assets/banking.jpg"
-import digitalMarketing from "/src/assets/digital-marketing.jpg"
+import irrigationSolution from "../assets/irrigation2.webp"
+import paymentSolution from "../assets/banking.webp"
+import digitalMarketing from "/src/assets/digital-marketing.webp"
 
 const Solution = () => {
     return (
