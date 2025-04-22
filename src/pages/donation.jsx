@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import PageNavbar from "../components/navbar";
-import donate from "../assets/donate.jpg";
+import donate from "../assets/donation.webp";
 import { Link } from "react-router-dom";
 import Footer from "../components/footer"
 
