@@ -25,20 +25,27 @@ const About = () => {
             <div className="about">
                 <div className="about-header">
                     <h1>About Us</h1>
-                    <p>At Mkulima Green Solutions, we are on a mission to transform the agricultural landscape in Kenya. We believe that every farmer deserves access to reliable, cost-effective and sustainable farming solutions</p>
+                    <p>Mkulima Green Solutions is Kenya's pioneering agri-tech venture, empowering urban and rural  growers through 
+                        AI-powered irrigation systems. Our intelligent sensors collect real-time data on soil moisture, weather
+                        conditions, and crop health, providing actionable insights that enhance productivity and sustainability.
+                    </p>
                 </div>
                 <div className="vision">
                     <img src={pumpkin} alt="vegetables" className="vision-img" />
                     <div className="vision-statement">
                         <h1> Our Vision</h1>
-                        <p>To build a food-secure Africa by equipping farmers with climate-smart technologies</p>
+                        <p>To be a leader in smart agriculture, leveraging technology to create a food-secure and sustainable
+                            future for communities across Kenya and beyond.
+                        </p>
                     </div>                    
                 </div>
                 <div className="about-mission">
                     <img src={solarPanel} alt="solar-panel" className="about-mission-img" />
                     <div className="misssion-statement">
                         <h1> Our Mission</h1>
-                        <p>To empower smallholder farmers and rural communities through solar-powered irrigation and sustainable agricultural practices, making farming more efficient, profitable and eco-friendly</p>
+                        <p>To revolutionize agriculture by providing sustainalbe, AI-driven solutions that empower farmers
+                            with actionable insights, enhancing productivity and resilience.
+                        </p>
                     </div>
                 </div>
                 <div className="matters">
