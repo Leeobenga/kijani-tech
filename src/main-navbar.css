@@ -104,9 +104,14 @@ video {
     font-size: 11px
 }
 
-.overlay2 span:hover {
+.overlay2 span > a:hover {
     cursor: pointer;
     color: #0f7c01;
+}
+
+.overlay2 span > a {
+    text-decoration: none;
+    color: white
 }
 
 .overlay h1 {

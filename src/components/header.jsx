@@ -38,10 +38,10 @@ const Header = () => {
                         <button id="join-btn" type="button">Join Us Now <span>»</span></button>
                     </div>
                     <div className="overlay2">
-                        <span>FACEBOOK</span>
-                        <span>INSTAGRAM</span>
-                        <span>TWITTER</span>
-                        <span>LINKEDIN</span>
+                        <span><a href="#" target="blank">FACEBOOK</a></span>
+                        <span><a href="https://www.instagram.com/mkulima_green_solutions/#" target="blank">INSTAGRAM</a></span>
+                        <span><a href="#" target="blank">TWITTER</a></span>
+                        <span><a href="https://www.linkedin.com/company/mkulima-green-solutions/" target="blank">LINKEDIN</a></span>
                     </div>
                 </div>        
             </header>
