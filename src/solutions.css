@@ -57,6 +57,10 @@
     border-radius: 20px    
 }
 
+.tech-img {
+  margin-top: 5rem
+}
+
 .techInsight {
   font-weight: 600
 }
