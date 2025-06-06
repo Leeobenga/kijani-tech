@@ -22,19 +22,30 @@ const Expert = () => {
                     </div>
                     <div className="expert-details">
                         <h2>Tracy Obirika <span className="title">/ FOUNDER</span></h2>
-                        <p>Blending urban perspective from Nairobi with insights from rural farm visits, leading strategic direction and innovation in climate smart agriculture.</p>
+                        <p>
+                            Blending urban perspective from Nairobi with insights from rural farm visits,
+                            leading strategic direction and innovation in climate smart agriculture.
+                        </p>
                         <div className="expert-socials-container">
                             <div className="expert-social">
-                                <img src={facebook} alt="facebook" className="expert-social-logo" />
+                                <a href="#" target="blank">
+                                    <img src={facebook} alt="facebook" className="expert-social-logo" />
+                                </a>
                             </div>
                             <div className="expert-social">
-                                <img src={x} alt="X" className="expert-social-logo" />
+                                <a href="#" target="blank">
+                                    <img src={x} alt="X" className="expert-social-logo" />
+                                </a>
                             </div>
                             <div className="expert-social">
-                                <img src={linkedIn} alt="linkedin" className="expert-social-logo" />
+                                <a href="#" target="blank">
+                                    <img src={linkedIn} alt="linkedin" className="expert-social-logo" />
+                                </a>
                             </div>
                             <div className="expert-social">
-                                <img src={instagram} alt="instagram" className="expert-social-logo" />
+                                <a href="#" target="blank">
+                                    <img src={instagram} alt="instagram" className="expert-social-logo" />
+                                </a>
                             </div>
                         </div>                    
                     </div>
@@ -48,16 +59,26 @@ const Expert = () => {
                         <p>Driving our tech vision to build scalable, human-centered solutions that transform agriculture. | </p>
                         <div className="expert-socials-container">
                             <div className="expert-social">
-                                <img src={facebook} alt="facebook" className="expert-social-logo" />
+                                <a href="https://web.facebook.com/profile.php?id=61557606449560" target="blank">
+                                    <img src={facebook} alt="facebook" className="expert-social-logo" />
+                                </a>
                             </div>
                             <div className="expert-social">
-                                <img src={x} alt="X" className="expert-social-logo" />
+                                <a href="https://x.com/RoberLe76057521" target="blank">
+                                    <img src={x} alt="X" className="expert-social-logo" />
+                                </a>
+                                
                             </div>
-                            <div className="expert-social">
-                                <img src={linkedIn} alt="linkedin" className="expert-social-logo" />
+                            <div className="expert-social">  
+                                <a href="https://www.linkedin.com/in/robert-obenga-a75939253/" target="blank">
+                                    <img src={linkedIn} alt="linkedin" className="expert-social-logo" />
+                                </a>
                             </div>
-                            <div className="expert-social">
-                                <img src={instagram} alt="instagram" className="expert-social-logo" />
+                            <div className="expert-social">                                
+                                <a href="https://www.instagram.com/realnamebobbi/" target="blank">
+                                    <img src={instagram} alt="instagram" className="expert-social-logo" />
+                                </a>
+                                
                             </div>
                         </div>                    
                     </div>
