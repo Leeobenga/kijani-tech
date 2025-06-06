@@ -34,7 +34,7 @@ const About = () => {
                     <img src={pumpkin} alt="vegetables" className="vision-img" />
                     <div className="vision-statement">
                         <h1> Our Vision</h1>
-                        <p>To be a leaer in smart agriculture, leveraging technology to create a food-secure and sustainable
+                        <p>To be a leader in smart agriculture, leveraging technology to create a food-secure and sustainable
                             future for communities across Kenya and beyond.
                         </p>
                     </div>                    
@@ -43,7 +43,7 @@ const About = () => {
                     <img src={solarPanel} alt="solar-panel" className="about-mission-img" />
                     <div className="misssion-statement">
                         <h1> Our Mission</h1>
-                        <p>To revollutionize agriculture by providing sustainalbe, AI-driven solutions that empower farmers
+                        <p>To revolutionize agriculture by providing sustainalbe, AI-driven solutions that empower farmers
                             with actionable insights, enhancing productivity and resilience.
                         </p>
                     </div>
