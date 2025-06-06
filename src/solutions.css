@@ -50,11 +50,22 @@
     margin: 2rem
 }
 
-.irrigation-img, .payment-img, .tech-img {
+.irrigation-img, .payment-img {
     width: 30rem;
     height: 40rem;
     object-fit: cover;
     border-radius: 20px    
+}
+
+.tech-img {  
+  height: 50rem;
+  width: 30rem;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.techInsight {
+  font-weight: 600
 }
 
 
