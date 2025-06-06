@@ -56,14 +56,14 @@ const Solution = () => {
                     <div className="technology-statement">
                         <h1>Technology-Driven Growth</h1>
                         <ul>
-                            <li>
+                            <li className="techInsight">
                                 AI-Driven Smart Sensors:<br />
                                 Our irrigation systems are equipped with intelligent sensors that 
                                 utilize Artificial Intelligence to analyze field data, including 
                                 soil moisture levels, crop growth patterns, and weather trends. 
                                 This enables precise irrigation scheduling and resource optimization.
                             </li>
-                            <li>
+                            <li className="techInsight">
                                 Data-Driven Decision Making:<br />
                                 By leveraging AI analytics, we provide farmers with real-time insights,
                                 allowing for informed decisions that improve yields and reduce waste.
