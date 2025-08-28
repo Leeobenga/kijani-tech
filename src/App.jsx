@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import ScrollToTop from "./components/scrollToTop"
 import Header from "./components/header"
 import Overview from "./components/overview"
 import Objectives from "./components/objectives"
@@ -77,6 +78,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
      <Routes>
         <Route path="/" element={
         <>
