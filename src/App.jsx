@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import FarmerSignupForm from "./pages/farmerSignupForm"
 import ScrollToTop from "./components/scrollToTop"
 import Header from "./components/header"
 import Overview from "./components/overview"
@@ -104,6 +105,7 @@ function App() {
         <Route path="resources" element={<Resources />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/donation" element={<Donation articles={articles} />}></Route>
+        <Route path="/farmerSignupForm" element={<FarmerSignupForm />}></Route>
     </Routes>
   </Router>
   )
