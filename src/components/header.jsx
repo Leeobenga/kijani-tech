@@ -35,7 +35,7 @@ const Header = () => {
                         <p>Empowering agriculture with AI-driven insights— from rural fields to urban rooftops</p>
                     </div>
                     <div id="overlay-button">
-                        <button id="join-btn" type="button">Join Us Now <span>»</span></button>
+                        <Link to="/farmerSignupForm"><button id="join-btn" type="button">Join Us Now <span>»</span></button></Link>
                     </div>
                     <div className="overlay2">
                         <span><a href="#" target="blank">FACEBOOK</a></span>
