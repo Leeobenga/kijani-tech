@@ -87,3 +87,88 @@ form > label {
     display: flex
 }
 
+.joinNav {    
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-image: url(./assets/crops.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20rem;
+    color:#0f7c01;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-right: 10rem;
+    padding-left: 10rem;    
+}
+
+
+.joinNav ul li button:hover {
+    cursor: pointer;
+    background-color:#0b5e00
+}
+
+.personalInfo {
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+.personalInfo h2 {
+    color: #0f7c01
+}
+
+.personalInfo input {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid #002f0b;
+    padding: 5px;
+    background-color:#f0f0e480
+}
+
+.personalInfo select {
+    appearance: none;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid #002f0b;
+    padding: 5px;
+    color: gray;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='black'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 30px;
+    background-color:#f0f0e480
+}
+
+.personalInfo button {
+    width: 30%;
+    background: #0f7c01;
+    color: #fff;
+    border: none;
+    height: 1.5rem;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0
+}
+
+.personalInfo button:hover {
+    cursor: pointer;
+    background: #0b5e00
+}
+
+.nxtbtn, .farmSubmit {    
+    left: 0;
+    bottom: 0
+}
+
+.prvbtn{
+  right: 0;  
+}

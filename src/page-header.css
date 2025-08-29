@@ -34,28 +34,28 @@
 }
 
 .contact-navbar span,
-.donateNav span {
+.donateNav span, .joinNav span{
     display: flex;
     align-items: center;
     margin: 25px
 }
 
 .contact-navbar ul,
-.donateNav ul {
+.donateNav ul, .joinNav ul {
     display: flex;
     justify-content: space-around;;
     align-items: center;
 }
 
 .contact-navbar ul li,
-.donateNav ul li {
+.donateNav ul li, .joinNav ul li {
     list-style-type: none;
     margin-right: 20px;
     
 }
 
 .contact-navbar  ul li button,
-.donateNav ul li button{
+.donateNav ul li button, .joinNav ul li button{
     background-color: #0f7c01;
     color: white;
     border: none;
@@ -85,7 +85,7 @@
 }
 
 @media (max-width: 1024px) {
-    .contact-navbar {
+    .contact-navbar, .joinNav {
         width: 100vw;
         padding: 0 5rem;
         font-size: 1.2rem;
@@ -97,7 +97,7 @@
 }
 
 @media (max-width: 720px) {
-    .contact-navbar {
+    .contact-navbar, .joinNav {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -106,16 +106,17 @@
         font-size: 1.1rem;
     }
 
-    .contact-navbar ul {
+    .contact-navbar ul, .joinNav ul {
         flex-direction: column;
         gap: 1rem;
     }
 
-    .contact-navbar ul li {
+    .contact-navbar ul li, .joinNav ul li {
         margin: 10px 0;
     }
 
-    .contact-navbar ul li button {
+    .contact-navbar ul li button, 
+    .joinNav ul li button {
         margin-left: 0;
     }
 
@@ -131,33 +132,39 @@
         grid-template-columns: 1rem 1fr 1rem;
     }
 
-    .contact-navbar {
+    .contact-navbar,
+    .joinNav {
         font-size: 1rem;
         padding: 1.5rem;
     }
 
-    .contact-navbar ul li button {
+    .contact-navbar ul li button,
+    .joinNav ul li button {
         width: 100%;
         max-width: 150px;
     }
 }
 
 @media (max-width: 464px) {
-    .contact-navbar {
+    .contact-navbar,
+    .joinNav {
         padding: 1rem;
         font-size: 0.95rem;
     }
 
-    .contact-navbar span {
+    .contact-navbar span,
+    .joinNav span {
         margin: 10px 0;
         flex-direction: column;
     }
 
-    .contact-navbar ul li {
+    .contact-navbar ul li,
+    .joinNav ul li {
         margin-right: 2rem;
     }
 
-    .contact-navbar ul li button {
+    .contact-navbar ul li button,
+    .joinNav ul li button {
         width: 100%;
         height: 36px;
         font-size: 0.9rem;
