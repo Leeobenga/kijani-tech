@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/footer"
 import ecologoSolution from "../assets/leaf2.jpg"
+import weatherSensors from "../assets/Weather-Sensors.jpg"
 import irrigationSolution from "../assets/irrigation2.webp"
 import paymentSolution from "../assets/banking.webp"
 import digitalMarketing from "/src/assets/digital-marketing.webp"
@@ -54,7 +55,7 @@ const Solution = () => {
                 </div>
                 <div className="technology">
                     <div className="technology-statement">
-                        <h1>Technology-Driven Growth</h1>
+                        <h1>Technology-Driven Growth</h1>                        
                         <ul>
                             <li>
                                 <span className="techInsight">AI-Driven Smart Sensors:</span><br />
@@ -70,7 +71,10 @@ const Solution = () => {
                             </li>
                         </ul>
                     </div>
-                    <img src={digitalMarketing} alt="tech" className="tech-img" />
+                    <div id="techImages">
+                        <img src={weatherSensors} alt="weather-seansors" id="tech-img1" />
+                        <img src={digitalMarketing} alt="tech" id="tech-img2" />                       
+                    </div>                    
                 </div>
             </div>
         </div>
