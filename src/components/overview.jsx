@@ -25,7 +25,12 @@ const Overview = () => {
             <article className="mission">
                 <h3>Mission</h3>
                 <h1>Smart farming for a Sustainable Future</h1>
-                <p>Supporting smallholder farmers and rural communities in Kenya by promoting sustainable agricultural practices and innovative climate finance solutions. Through accessible financial models, renewable energy intergration and climate-smart technologies aiming to enhance food security, economic resilience and environmental sustainability to ensure no family is forced to migrate due to climate hardship</p>               
+                <p>
+                    Empowering smallholder farmers and rural communities in Kenya by promoting sustainable agricultural 
+                    practices and innovative climate finance solutions. By integrating renewable energy, AI-driven insights, 
+                    and climate-smart technologies, we create accessible financial models that strengthen food security, 
+                    boost economic resilience, and advance environmental sustainability ensuring no family is forced to migrate due to climate hardship.
+                </p>               
             </article>
         </div>
     )
