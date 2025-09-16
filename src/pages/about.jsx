@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 import iconLeaf from "../assets/leaf2.jpg";
 import pumpkin from "../assets/pumpkin.webp";
 import solarPanel from "../assets/solar-panel.webp";
-import "../About-us.css"; // We'll create this CSS file
+import "../about-us.css"; // We'll create this CSS file
 
 const About = () => {
   const aboutRef = useRef(null);
