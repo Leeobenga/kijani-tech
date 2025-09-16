@@ -78,6 +78,10 @@
     border-radius: 20%;    
 }
 
+.vision-img {
+  height: 35rem
+}
+
 .matters {
     display: flex;
     flex-direction: column;
@@ -105,6 +109,40 @@
     font-size: 3rem;
     font-weight: 600;
     color:#0f7c01
+}
+
+/* About.css */
+
+.about .animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about.visible .animate-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger the animations for each section */
+.about.visible .about-header {
+  transition-delay: 0.9s;
+}
+
+.about.visible .vision {
+  transition-delay: 2.4s;
+}
+
+.about.visible .about-mission {
+  transition-delay: 3.8s;
+}
+
+.about.visible .matters {
+  transition-delay: 4.8s;
+}
+
+.about.visible .about-end {
+  transition-delay: 6.4s;
 }
 
 @media (max-width: 1024px) {
