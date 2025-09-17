@@ -91,6 +91,7 @@
     .payment,
     .technology {
       gap: 0.5rem;
+      flex-wrap:nowrap
     }
   
     .irrigation-statement,
@@ -126,8 +127,7 @@
     .technology {
       flex-direction: column;
       align-items: center;
-      text-align: center;
-      gap: 4rem;
+      text-align: center;     
     }
   
     .irrigation-img,
@@ -138,6 +138,11 @@
       height: auto;
       max-width: 100%;
       border-radius: 15px;
+    }
+
+    .irrigation-img {
+      height: 20rem;
+      object-fit:initial
     }
   
     .irrigation-statement,
@@ -186,13 +191,18 @@
       font-size: 1.5rem;
       margin: 1rem;
     }
+
+    #tech-img1{
+      margin: 5rem 0 5rem 0
+    }
   }
   
   @media (max-width: 464px) {
     .problem {
       font-size: 1.6rem;
     }
-  
+
+      
     .irrigation-statement h1,
     .payment-statement h1,
     .technology-statement h1 {
